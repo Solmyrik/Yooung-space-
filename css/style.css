@@ -227,6 +227,7 @@ body.lock {
 .header {
   padding: 20px 15px;
   position: relative;
+  margin-bottom: 68px;
 }
 @media (max-width: 992px) {
   .header {
@@ -246,6 +247,13 @@ body.lock {
   justify-content: space-between;
   align-items: center;
   height: 68px;
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  max-width: 1208px;
+  z-index: 1000;
 }
 @media (max-width: 992px) {
   .header__container {
@@ -259,6 +267,7 @@ body.lock {
     top: 12px;
     left: 15px;
     width: calc(100% - 30px);
+    transform: translate(0%, 0);
     z-index: 1000;
   }
 }
