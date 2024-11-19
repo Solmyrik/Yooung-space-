@@ -994,7 +994,7 @@ body.lock {
 }
 @media (max-width: 992px) {
   .what__body {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 767px) {
@@ -1047,7 +1047,7 @@ body.lock {
   gap: 24px;
   margin-bottom: 16px;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .what__top {
     flex-direction: row;
     gap: 12px;
@@ -1059,7 +1059,7 @@ body.lock {
   width: 80px;
   height: 80px;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .what__icon img {
     width: 40px;
     height: 40px;
@@ -1180,7 +1180,7 @@ body.lock {
 .what-item-decor img {
   width: 182px;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .what-item-decor img {
     width: 92px;
   }
@@ -1195,7 +1195,7 @@ body.lock {
     top: 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .what-item-decor {
     top: 62px;
     right: -29px;
@@ -1729,11 +1729,13 @@ body.lock {
 }
 @media (max-width: 992px) {
   .subscription__body {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 }
 @media (max-width: 767px) {
   .subscription__body {
+    gap: 40px;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -1787,6 +1789,44 @@ body.lock {
 @media (max-width: 1238px) {
   .subscription__label {
     right: -10px;
+  }
+}
+@media (max-width: 992px) {
+  .subscription__label {
+    right: 30px;
+    top: -51px;
+  }
+}
+@media (max-width: 767px) {
+  .subscription__label {
+    right: -10px;
+    top: -30px;
+  }
+}
+@media (max-width: 992px) {
+  .subscription__tablet-elements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .subscription__tablet-elements {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .subscription__prices {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .subscription__prices {
+    flex-direction: column;
+    margin-bottom: 12px;
   }
 }
 .subscription__elements {
@@ -1866,6 +1906,12 @@ body.lock {
   left: 0;
   transform: translate(0, -50%);
 }
+@media (max-width: 992px) {
+  .subscription__oldprice {
+    margin: inherit;
+    margin-bottom: 0;
+  }
+}
 .subscription__price {
   font-weight: 600;
   font-size: 30px;
@@ -1873,6 +1919,11 @@ body.lock {
   color: #484343;
   margin-bottom: 24px;
   line-height: 110%;
+}
+@media (max-width: 992px) {
+  .subscription__price {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 767px) {
   .subscription__price {
