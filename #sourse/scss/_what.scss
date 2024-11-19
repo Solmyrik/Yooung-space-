@@ -132,9 +132,11 @@
   }
 
   &__link {
-    display: block;
-    width: fit-content;
-    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 44px;
     font-weight: 600;
     font-size: 16px;
     color: #fff;

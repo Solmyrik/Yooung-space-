@@ -1083,10 +1083,11 @@ body.lock {
   }
 }
 .what__link {
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 44px;
   font-weight: 600;
   font-size: 16px;
   color: #fff;
@@ -1242,16 +1243,14 @@ body.lock {
   padding: 12px;
   background: #fdad95;
   border-radius: 44px;
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 36px;
   margin: 0 auto;
   transition: all 0.3s;
   transition: all 0.3s;
-}
-.master__link:hover {
-  background: #f4e6d6;
-  color: #484343;
 }
 .master__link:hover {
   background: #f29a7f;
