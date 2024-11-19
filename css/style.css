@@ -2035,3 +2035,250 @@ body.lock {
     display: none;
   }
 }
+
+.faq {
+  padding: 60px 0px;
+  background: #ffffff;
+}
+@media (max-width: 767px) {
+  .faq {
+    padding: 50px 0px;
+  }
+}
+.faq__container {
+  position: relative;
+}
+.faq__title {
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .faq__title {
+    margin-bottom: 24px;
+  }
+}
+.faq__items {
+  width: 792px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (max-width: 992px) {
+  .faq__items {
+    width: 100%;
+  }
+}
+.faq__item {
+  padding: 24px;
+  background: #fbefe1;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.faq__item.active {
+  background: #fdad95;
+}
+.faq__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq__label p {
+  padding-right: 40px;
+  line-height: 120%;
+  font-weight: 600;
+  font-size: 16px;
+}
+.faq__label svg {
+  transition: all 0.3s;
+}
+.faq__label.active svg {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+.faq__label.active svg path {
+  fill: #484343;
+  stroke: #484343;
+}
+.faq__decor {
+  position: absolute;
+}
+.faq__decor_1 {
+  bottom: 40px;
+  left: -25px;
+}
+@media (max-width: 1238px) {
+  .faq__decor_1 {
+    display: none;
+  }
+}
+.faq__decor_2 {
+  top: 170px;
+  right: 0;
+}
+@media (max-width: 1238px) {
+  .faq__decor_2 {
+    display: none;
+  }
+}
+
+.faq__content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+}
+.faq__content.active {
+  margin-top: 6px;
+}
+
+.footer {
+  background-color: #ffffff;
+}
+.footer__sircle {
+  width: 100%;
+}
+.footer__sircle img {
+  width: 100%;
+}
+.footer__wrapper {
+  background: #c8d2b9;
+  padding: 40px 0px 32px;
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    padding: 24px 0px 16px;
+  }
+}
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  position: relative;
+  margin-bottom: 32px;
+}
+.footer__top::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #484343;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 992px) {
+  .footer__top {
+    gap: 32px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .footer__top {
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-bottom: 16px;
+  }
+}
+.footer__logo {
+  padding-top: 5px;
+}
+.footer__logo img {
+  width: 313px;
+}
+@media (max-width: 992px) {
+  .footer__logo img {
+    width: 290px;
+  }
+}
+.footer__list {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+@media (max-width: 850px) {
+  .footer__list {
+    gap: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__list {
+    flex-direction: column;
+  }
+}
+.footer__link {
+  font-weight: 500;
+  font-size: 14px;
+  color: #605c5c;
+}
+.footer__left {
+  position: relative;
+}
+.footer__left p {
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  width: 200px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 140%;
+  text-align: right;
+  color: #484343;
+  opacity: 0.5;
+}
+@media (max-width: 992px) {
+  .footer__left p {
+    left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .footer__left p {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.footer__socials {
+  display: flex;
+  gap: 16px;
+}
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .bottom-footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+.bottom-footer__left {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #484343;
+}
+.bottom-footer__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+@media (max-width: 992px) {
+  .bottom-footer__links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+.bottom-footer__link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #484343;
+}
