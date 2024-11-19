@@ -230,6 +230,11 @@ body.lock {
 }
 @media (max-width: 992px) {
   .header {
+    margin-bottom: 52px;
+  }
+}
+@media (max-width: 992px) {
+  .header {
     padding: 12px 15px;
   }
 }
@@ -246,6 +251,15 @@ body.lock {
   .header__container {
     height: 52px;
     padding: 0px 8px;
+  }
+}
+@media (max-width: 992px) {
+  .header__container {
+    position: fixed;
+    top: 12px;
+    left: 15px;
+    width: calc(100% - 30px);
+    z-index: 1000;
   }
 }
 .header__logo {

@@ -2,6 +2,9 @@
   padding: 20px 15px;
   position: relative;
   @media (max-width: $tablet) {
+    margin-bottom: 52px;
+  }
+  @media (max-width: $tablet) {
     padding: 12px 15px;
   }
   &__container {
@@ -15,6 +18,13 @@
     @media (max-width: $tablet) {
       height: 52px;
       padding: 0px 8px;
+    }
+    @media (max-width: $tablet) {
+      position: fixed;
+      top: 12px;
+      left: 15px;
+      width: calc(100% - 30px);
+      z-index: 1000;
     }
   }
 
