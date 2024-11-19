@@ -92,5 +92,19 @@ if (reviewsliderContainer) {
         slidesPerView: 3,
       },
     },
+    on: {
+      slideChange: function () {
+        // Удаляем класс со всех слайдов перед добавлением
+        this.slides.forEach((slide) => {
+          slide.classList.remove('swiper-slide-next-next');
+        });
+
+        // Определяем индексы для следующего слайда и второго следующего слайда
+        const nextNextIndex = (this.activeIndex + 2) % this.slides.length;
+
+        // Устанавливаем класс для второго следующего слайда
+        this.slides[nextNextIndex].classList.add('swiper-slide-next-next');
+      },
+    },
   });
 }
