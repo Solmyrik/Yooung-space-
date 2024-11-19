@@ -137,6 +137,14 @@
       margin-top: 24px;
       width: 100%;
     }
+    transition: all 0.3s;
+    &:hover {
+      background: #f29a7f;
+    }
+    &:active {
+      background: #f29a7f;
+      border: 4px solid #febeaa;
+    }
   }
 }
 

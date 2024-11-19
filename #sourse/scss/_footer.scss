@@ -80,6 +80,10 @@
     font-weight: 500;
     font-size: 14px;
     color: #605c5c;
+    transition: all 0.3s;
+    &:hover {
+      color: #db8e81;
+    }
   }
 
   &__left {
@@ -112,6 +116,18 @@
   }
 
   &__social {
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          fill: #db8e81;
+        }
+      }
+    }
   }
 
   &__bottom {
@@ -148,5 +164,9 @@
     font-size: 12px;
     line-height: 150%;
     color: $black;
+    transition: all 0.3s;
+    &:hover {
+      color: #db8e81;
+    }
   }
 }

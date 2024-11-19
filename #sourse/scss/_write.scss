@@ -50,11 +50,22 @@
     color: $black;
     padding: 20px;
     background-color: #fcf4eb;
-    display: block;
-    width: fit-content;
+    width: 240px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: $mobile) {
       width: 100%;
       text-align: center;
+    }
+    transition: all 0.3s;
+    &:hover {
+      background: #f4e6d6;
+    }
+    &:active {
+      background: #f4e6d6;
+      border: 4px solid #ebdccb;
     }
   }
 

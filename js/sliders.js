@@ -5,6 +5,10 @@ if (masterSliderContainer) {
   const masterSSlider = new Swiper('.master__slider-1', {
     slidesPerView: 'auto',
     spaceBetween: 40,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
     navigation: {
       prevEl: '.master-prev-1',
       nextEl: '.master-next-1',
@@ -26,6 +30,10 @@ if (masterSliderContainer2) {
   const masterSSlider2 = new Swiper('.master__slider-2', {
     slidesPerView: 'auto',
     spaceBetween: 40,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
     navigation: {
       prevEl: '.master-prev-2',
       nextEl: '.master-next-2',
@@ -47,6 +55,10 @@ if (receiveSliderContainer) {
   const receiveSSlider = new Swiper('.receive__slider', {
     slidesPerView: 'auto',
     spaceBetween: 0,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
     breakpoints: {
       320: {
         spaceBetween: 16,
@@ -65,6 +77,10 @@ if (reviewsliderContainer) {
     slidesPerView: 3,
     spaceBetween: 40,
     initialSlide: 1,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
     loop: true,
     breakpoints: {
       320: {

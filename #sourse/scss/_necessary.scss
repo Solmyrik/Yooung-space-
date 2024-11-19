@@ -87,6 +87,14 @@
     @media (max-width: $mobile) {
       width: 100%;
     }
+    transition: all 0.3s;
+    &:hover {
+      background: #f4e6d6;
+    }
+    &:active {
+      background: #f4e6d6;
+      border: 4px solid #ebdccb;
+    }
   }
 
   &__right {

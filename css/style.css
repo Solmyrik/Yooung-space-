@@ -365,6 +365,7 @@ body.lock {
   align-items: center;
   justify-content: center;
   border-radius: 44px;
+  transition: all 0.3s;
 }
 .header__button p {
   font-weight: 600;
@@ -373,6 +374,12 @@ body.lock {
 }
 .header__button img {
   display: none;
+}
+.header__button:hover {
+  background: #605c5c;
+}
+.header__button:active {
+  border: 4px solid #7c7676;
 }
 @media (max-width: 992px) {
   .header__button {
@@ -588,10 +595,25 @@ body.lock {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
+  transition: all 0.3s;
+}
+.intro__link:hover {
+  background: #f29a7f;
+}
+.intro__link:active {
+  border: 4px solid #febeaa;
+  background: #f29a7f;
 }
 .intro__link_secondary {
   background: #f4e6d6;
   color: #484343;
+}
+.intro__link_secondary:hover {
+  background: #f4e6d6;
+}
+.intro__link_secondary:active {
+  border: 4px solid #febeaa;
+  border: 4px solid #ebdccb;
 }
 @media (max-width: 767px) {
   .intro__link {
@@ -969,11 +991,25 @@ body.lock {
 .what__item:nth-of-type(2) .what__link {
   background: #7fa2b9;
 }
+.what__item:nth-of-type(2) .what__link:hover {
+  background: #9dbed4;
+}
+.what__item:nth-of-type(2) .what__link:active {
+  background: #9dbed4;
+  border: 4px solid #7fa2b9;
+}
 .what__item:nth-of-type(3) {
   background: #fdad95;
 }
 .what__item:nth-of-type(3) .what__link {
   background: #da8c74;
+}
+.what__item:nth-of-type(3) .what__link:hover {
+  background: #f29a7f;
+}
+.what__item:nth-of-type(3) .what__link:active {
+  background: #f29a7f;
+  border: 4px solid #febeaa;
 }
 @media (max-width: 767px) {
   .what__item {
@@ -1056,12 +1092,20 @@ body.lock {
   color: #fff;
   background: #a5b292;
   border-radius: 44px;
+  transition: all 0.3s;
 }
 @media (max-width: 767px) {
   .what__link {
     padding: 12px;
     font-size: 14px;
   }
+}
+.what__link:hover {
+  background: #b7c2a5;
+}
+.what__link:active {
+  background: #b7c2a5;
+  border: 4px solid #a5b292;
 }
 
 .what-decor-1 {
@@ -1203,10 +1247,18 @@ body.lock {
   width: fit-content;
   margin: 0 auto;
   transition: all 0.3s;
+  transition: all 0.3s;
 }
 .master__link:hover {
   background: #f4e6d6;
   color: #484343;
+}
+.master__link:hover {
+  background: #f29a7f;
+}
+.master__link:active {
+  background: #f29a7f;
+  border: 4px solid #febeaa;
 }
 .master__paginations {
   display: flex;
@@ -1362,11 +1414,19 @@ body.lock {
   font-size: 16px;
   color: #484343;
   height: 56px;
+  transition: all 0.3s;
 }
 @media (max-width: 767px) {
   .necessary__link {
     width: 100%;
   }
+}
+.necessary__link:hover {
+  background: #f4e6d6;
+}
+.necessary__link:active {
+  background: #f4e6d6;
+  border: 4px solid #ebdccb;
 }
 .necessary__right {
   flex: 0 1 53.5%;
@@ -1808,6 +1868,14 @@ body.lock {
   font-size: 16px;
   color: #fff;
   margin-bottom: 24px;
+  transition: all 0.3s;
+}
+.subscription__button:hover {
+  background: #605c5c;
+}
+.subscription__button:active {
+  background: #605c5c;
+  border: 4px solid #7c7676;
 }
 .subscription__link {
   font-weight: 600;
@@ -1942,12 +2010,20 @@ body.lock {
   justify-content: center;
   margin: 0 auto;
   margin-top: 40px;
+  transition: all 0.3s;
 }
 @media (max-width: 767px) {
   .reviews__link {
     margin-top: 24px;
     width: 100%;
   }
+}
+.reviews__link:hover {
+  background: #f29a7f;
+}
+.reviews__link:active {
+  background: #f29a7f;
+  border: 4px solid #febeaa;
 }
 
 .write {
@@ -2006,15 +2082,25 @@ body.lock {
   color: #484343;
   padding: 20px;
   background-color: #fcf4eb;
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 240px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
 }
 @media (max-width: 767px) {
   .write__link {
     width: 100%;
     text-align: center;
   }
+}
+.write__link:hover {
+  background: #f4e6d6;
+}
+.write__link:active {
+  background: #f4e6d6;
+  border: 4px solid #ebdccb;
 }
 .write__right {
   flex: 0 1 50%;
@@ -2235,6 +2321,10 @@ body.lock {
   font-weight: 500;
   font-size: 14px;
   color: #605c5c;
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  color: #db8e81;
 }
 .footer__left {
   position: relative;
@@ -2266,6 +2356,12 @@ body.lock {
 .footer__socials {
   display: flex;
   gap: 16px;
+}
+.footer__social svg path {
+  transition: all 0.3s;
+}
+.footer__social:hover svg path {
+  fill: #db8e81;
 }
 .bottom-footer {
   display: flex;
@@ -2301,4 +2397,8 @@ body.lock {
   font-size: 12px;
   line-height: 150%;
   color: #484343;
+  transition: all 0.3s;
+}
+.bottom-footer__link:hover {
+  color: #db8e81;
 }

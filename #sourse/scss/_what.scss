@@ -44,12 +44,26 @@
       background: #bcd1de;
       .what__link {
         background: #7fa2b9;
+        &:hover {
+          background: #9dbed4;
+        }
+        &:active {
+          background: #9dbed4;
+          border: 4px solid #7fa2b9;
+        }
       }
     }
     &:nth-of-type(3) {
       background: #fdad95;
       .what__link {
         background: #da8c74;
+        &:hover {
+          background: #f29a7f;
+        }
+        &:active {
+          background: #f29a7f;
+          border: 4px solid #febeaa;
+        }
       }
     }
     @media (max-width: $mobile) {
@@ -129,6 +143,14 @@
     @media (max-width: $mobile) {
       padding: 12px;
       font-size: 14px;
+    }
+    transition: all 0.3s;
+    &:hover {
+      background: #b7c2a5;
+    }
+    &:active {
+      background: #b7c2a5;
+      border: 4px solid #a5b292;
     }
   }
 }
