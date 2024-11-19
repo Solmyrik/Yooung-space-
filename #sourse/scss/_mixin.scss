@@ -1,0 +1,243 @@
+$minwidth: 320px;
+$mw: 1238px;
+$laptop: 1400px;
+$md1: $mw + 12px;
+$md14: 1040px;
+$tablet: 992px;
+$mobile: 767px;
+$mobile-s: 501px;
+$md4: 479.98px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1500;
+
+//======================================================================================================================
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    display: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@100..900&display=swap');
+
+//fonts
+$mon: 'Montserrat', sans-serif;
+$mon-alt: 'Montserrat Alternates', sans-serif;
+
+//color
+$white: #ffffff;
+$gray: #605c5c;
+$black: #484343;
+$vanil: #fbefe1;
+
+._h2 {
+  font-family: $mon-alt;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 107%;
+  text-align: center;
+  color: $black;
+  margin-bottom: 24px;
+  @media (max-width: $tablet) {
+    font-size: 44px;
+  }
+  @media (max-width: $mobile) {
+    font-family: $mon;
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+}
+
+._p-m {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: $black;
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
+}
+
+// ._margin-b {
+//   margin-bottom: 120px;
+//   @media (max-width: $tablet) {
+//     margin-bottom: 90px;
+//   }
+//   @media (max-width: $mobile) {
+//     margin-bottom: 70px;
+//   }
+// }
+// ._margin-s {
+//   margin-bottom: 50px;
+//   @media (max-width: $mobile) {
+//     margin-bottom: 70px;
+//   }
+// }
+
+// ._h2 {
+//   font-family: $noto;
+//   font-weight: 400;
+//   font-size: 40px;
+//   line-height: 120%;
+//   letter-spacing: -0.01em;
+//   text-transform: uppercase;
+//   color: $bg-total-dark;
+//   @media (max-width: $tablet) {
+//     font-size: 32px;
+//   }
+//   @media (max-width: $mobile) {
+//     font-size: 24px;
+//   }
+// }
+
+// ._h3 {
+//   font-weight: 500;
+//   font-family: $inter500;
+//   font-size: 20px;
+//   line-height: 120%;
+//   color: $bg-total-dark;
+//   @media (max-width: $mobile) {
+//     font-size: 18px;
+//   }
+// }
+
+// ._h4 {
+//   font-weight: 500;
+//   font-family: $inter500;
+//   font-size: 14px;
+//   line-height: 130%;
+//   text-transform: uppercase;
+//   color: $text-grey;
+// }
+
+// ._h5 {
+//   font-weight: 500;
+//   font-size: 18px;
+//   font-family: $inter500;
+//   line-height: 120%;
+//   color: $text-dark;
+//   @media (max-width: $tablet) {
+//     font-size: 16px;
+//   }
+// }
+
+// ._par-m {
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 120%;
+//   color: $text-grey;
+//   @media (max-width: $tablet) {
+//     font-size: 14px;
+//   }
+// }
+
+// ._l-gray {
+//   color: $text-light-grey;
+// }
+
+// ._btn {
+//   width: 265px;
+//   height: 44px;
+//   border-radius: 300px;
+//   background: $bg-light;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   padding-left: 40px;
+//   font-weight: 500;
+//   font-family: $inter500;
+//   font-size: 16px;
+//   line-height: 120%;
+//   text-transform: uppercase;
+//   text-align: center;
+//   color: $text-dark;
+//   cursor: pointer;
+//   transition: all 0.3s;
+//   padding: 0px 6px;
+//   &:hover {
+//     span {
+//       background-color: $bg-total-dark;
+//       svg {
+//         path {
+//           fill: $bg-light;
+//         }
+//       }
+//     }
+//   }
+//   p {
+//     flex: 1 1 auto;
+//     text-align: center;
+//     padding-left: 14px;
+//   }
+//   span {
+//     transition: all 0.3s;
+//     border-radius: 50%;
+//     background-color: $bg-light;
+//     border: 1px solid $bg-total-dark;
+//     cursor: pointer;
+//     height: 32px;
+//     width: 32px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     svg {
+//       width: 16px;
+//       height: 16px;
+//       path {
+//         transition: all 0.3s;
+//       }
+//     }
+//   }
+//   @media (max-width: $mobile) {
+//     font-size: 14px;
+//     span {
+//       background-color: $bg-total-dark;
+//       svg {
+//         path {
+//           fill: $bg-light;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.only-pc {
+  display: block;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.only-tablet {
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+  }
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+.only-mobile {
+  display: none;
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.only-pc-tablet {
+  display: block;
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+.only-tablet-mobile {
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
