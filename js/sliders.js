@@ -57,3 +57,24 @@ if (receiveSliderContainer) {
     },
   });
 }
+
+const reviewsliderContainer = document.querySelector('.reviews__slider');
+
+if (reviewsliderContainer) {
+  const reviewsSlider = new Swiper('.reviews__slider', {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    initialSlide: 1,
+    loop: true,
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+        slidesPerView: 'auto',
+      },
+      992: {
+        spaceBetween: 40,
+        slidesPerView: 3,
+      },
+    },
+  });
+}
