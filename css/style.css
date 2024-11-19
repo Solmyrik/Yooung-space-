@@ -389,11 +389,13 @@ body.lock {
 .header__button img {
   display: none;
 }
-.header__button:hover {
-  background: #605c5c;
-}
-.header__button:active {
-  border: 4px solid #7c7676;
+@media (hover: hover) {
+  .header__button:hover {
+    background: #605c5c;
+  }
+  .header__button:active {
+    border: 4px solid #7c7676;
+  }
 }
 @media (max-width: 992px) {
   .header__button {
