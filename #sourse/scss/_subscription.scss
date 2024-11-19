@@ -51,7 +51,12 @@
     font-size: 34px;
     color: $black;
     margin-bottom: 24px;
+    max-width: 230px;
+    @media (max-width: $tablet) {
+      max-width: 100%;
+    }
     @media (max-width: $mobile) {
+      max-width: 130px;
       font-size: 20px;
       margin-bottom: 16px;
     }

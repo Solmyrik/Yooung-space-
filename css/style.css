@@ -1763,9 +1763,16 @@ body.lock {
   font-size: 34px;
   color: #484343;
   margin-bottom: 24px;
+  max-width: 230px;
+}
+@media (max-width: 992px) {
+  .subscription__name {
+    max-width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .subscription__name {
+    max-width: 130px;
     font-size: 20px;
     margin-bottom: 16px;
   }
