@@ -81,6 +81,11 @@
     display: block;
     width: fit-content;
     margin: 0 auto;
+    transition: all 0.3s;
+    &:hover {
+      background: #f4e6d6;
+      color: $black;
+    }
   }
 
   &__paginations {

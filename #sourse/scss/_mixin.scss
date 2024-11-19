@@ -213,6 +213,12 @@ $vanil: #fbefe1;
   }
 }
 
+.only-pc-tablet {
+  @media (max-width: $mobile) {
+    display: none !important;
+  }
+}
+
 .only-tablet {
   display: none;
   @media (max-width: $tablet) {
@@ -223,9 +229,15 @@ $vanil: #fbefe1;
   }
 }
 .only-mobile {
-  display: none;
+  display: none !important;
   @media (max-width: $mobile) {
-    display: block;
+    display: block !important;
+  }
+}
+.only-mobile-flex {
+  display: none !important;
+  @media (max-width: $mobile) {
+    display: flex !important;
   }
 }
 
