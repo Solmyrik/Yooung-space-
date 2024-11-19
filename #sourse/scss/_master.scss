@@ -1,0 +1,146 @@
+.master {
+  padding: 60px 0px 80px;
+  @media (max-width: $mobile) {
+    padding: 50px 0px;
+  }
+  background: #fbefe1;
+  &_w {
+    background: $white;
+  }
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+    max-width: 950px;
+
+    margin: 0 auto;
+    margin-bottom: 40px;
+    @media (max-width: $mobile) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__body {
+  }
+
+  &__slider {
+  }
+
+  &__slide {
+  }
+
+  &__wrapper {
+    display: grid;
+    //  grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+  }
+
+  &__slide {
+    text-align: center;
+    width: 272px;
+  }
+
+  &__img {
+    margin-bottom: 12px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 4px;
+    @media (max-width: $mobile) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: #605c5c;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px;
+    background: #fdad95;
+    border-radius: 44px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__paginations {
+    display: flex;
+    margin-top: 24px;
+    gap: 11px;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+.master-next,
+.master-prev {
+  cursor: pointer;
+}
+
+.swiper-button-disabled {
+  cursor: auto;
+  svg {
+    path {
+      fill: #f4e6d6;
+    }
+  }
+}
+
+.master-text {
+  font-weight: 600;
+  font-size: 12px;
+  color: $black;
+}
+
+.swiper-block {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+.master__decor-1 {
+  top: 60px;
+  left: 0;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+.master__decor-2 {
+  position: absolute;
+  bottom: 0px;
+  left: -60px;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+.master__decor-3 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
