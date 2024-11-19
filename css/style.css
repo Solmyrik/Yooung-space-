@@ -1969,6 +1969,7 @@ body.lock {
   background: #f4e6d6;
   opacity: 0.5;
   transition: opacity 0.2s;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .reviews__slide {
@@ -1982,12 +1983,15 @@ body.lock {
   }
 }
 .reviews__slide.swiper-slide-active {
+  cursor: auto;
   opacity: 1;
 }
 .reviews__slide.swiper-slide-next {
+  cursor: auto;
   opacity: 1;
 }
 .reviews__slide.swiper-slide-next-next {
+  cursor: auto;
   opacity: 1;
 }
 .reviews__img {

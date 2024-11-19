@@ -107,4 +107,25 @@ if (reviewsliderContainer) {
       },
     },
   });
+
+  const items = document.querySelectorAll('.reviews__slide');
+
+  items.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      if (item.classList.contains('swiper-slide-next-next')) {
+        return;
+      }
+      if (item.classList.contains('swiper-slide-next')) {
+        return;
+      }
+      if (item.classList.contains('swiper-slide-active')) {
+        return;
+      }
+      if (item.nextElementSibling.classList.contains('swiper-slide-active')) {
+        reviewsSlider.slidePrev();
+        return;
+      }
+      reviewsSlider.slideNext();
+    });
+  });
 }
