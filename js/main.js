@@ -9,7 +9,7 @@ if (iconMenu) {
 }
 
 // аккордеоны
-const faqItem = document.querySelectorAll('.faq__label');
+const faqItem = document.querySelectorAll('.faq__item');
 
 if (faqItem && faqItem.length) {
   faqItem.forEach((e) => {
@@ -20,13 +20,17 @@ if (faqItem && faqItem.length) {
     faqItem.forEach((item) => {
       console.log(item);
 
-      parrent = item.parentElement;
+      const parrent = item;
       parrent.classList.remove('active');
 
-      currentContent = item.nextElementSibling;
+      const currentContent = item.querySelector('.faq__content');
+      const currentLabel = item.querySelector('.faq__label');
+
       item.classList.remove('active');
       currentContent.style.maxHeight = 0;
       currentContent.classList.remove('active');
+
+      currentLabel.classList.remove('active');
     });
   }
 
@@ -38,10 +42,16 @@ if (faqItem && faqItem.length) {
       return;
     }
     allCloseFaq();
-    currentContent = e.currentTarget.nextElementSibling;
-    parrent = currentContent.parentElement;
-    e.currentTarget.classList.toggle('active');
-    if (e.currentTarget.classList.contains('active')) {
+    const currentContent = e.currentTarget.querySelector('.faq__content');
+    const currentLabel = e.currentTarget.querySelector('.faq__label');
+
+    parrent = e.currentTarget;
+
+    console.log(e.currentTarget, 'current');
+    console.log(currentLabel, 'currentLabel');
+
+    currentLabel.classList.toggle('active');
+    if (currentLabel.classList.contains('active')) {
       currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
       currentContent.classList.add('active');
       parrent.classList.add('active');
@@ -49,6 +59,7 @@ if (faqItem && faqItem.length) {
       currentContent.style.maxHeight = 0;
       currentContent.classList.remove('active');
       parrent.classList.remove('active');
+      currentLabel.classList.remove('active');
     }
   }
 }
