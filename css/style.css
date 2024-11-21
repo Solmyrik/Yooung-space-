@@ -3039,6 +3039,105 @@ body.lock {
   }
 }
 
+.team {
+  padding: 120px 0;
+  background: #bcd1de;
+}
+@media (max-width: 992px) {
+  .team {
+    padding: 70px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .team {
+    padding: 50px 0px;
+  }
+}
+.team__title {
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .team__title {
+    margin-bottom: 16px;
+  }
+}
+.team__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media (max-width: 1238px) {
+  .team__body {
+    gap: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .team__body {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .team__body {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+}
+.team__item {
+  border-radius: 30px;
+  padding: 24px 16px;
+  background: #fff;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .team__item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+}
+.team__image {
+  margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+  .team__image {
+    flex: 0 0 60px;
+    width: 60px;
+  }
+  .team__image img {
+    width: 60px;
+  }
+}
+.team__name {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: center;
+  color: #484343;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+@media (max-width: 767px) {
+  .team__name {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+.team__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #605c5c;
+}
+@media (max-width: 767px) {
+  .team__text {
+    font-size: 14px;
+    line-height: 143%;
+    text-align: left;
+  }
+}
+
 .footer {
   background-color: #ffffff;
 }

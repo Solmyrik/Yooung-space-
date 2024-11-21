@@ -1,0 +1,86 @@
+.team {
+  padding: 120px 0;
+  background: #bcd1de;
+  @media (max-width: $tablet) {
+    padding: 70px 0px;
+  }
+  @media (max-width: $mobile) {
+    padding: 50px 0px;
+  }
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    @media (max-width: $mobile) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    @media (max-width: $mw) {
+      gap: 16px;
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    border-radius: 30px;
+    padding: 24px 16px;
+    background: #fff;
+    text-align: center;
+    @media (max-width: $mobile) {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    margin-bottom: 16px;
+    @media (max-width: $mobile) {
+      flex: 0 0 60px;
+      width: 60px;
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    text-align: center;
+    color: $black;
+    font-family: $mon-alt;
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: #605c5c;
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      line-height: 143%;
+      text-align: left;
+    }
+  }
+}
