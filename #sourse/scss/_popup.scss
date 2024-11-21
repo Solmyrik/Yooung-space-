@@ -1,6 +1,6 @@
 body::after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.25);
+  content: '';
+  background-color: #484343ca;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -9,7 +9,7 @@ body::after {
   opacity: 0;
   transition: opacity 0.8s ease 0s;
   pointer-events: none;
-  z-index: 149;
+  z-index: 1149;
 }
 .popup-show body::after {
   opacity: 1;
@@ -20,13 +20,16 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 30px 10px;
+  padding: 30px 15px;
   transition: visibility 0.8s ease 0s;
   visibility: hidden;
   pointer-events: none;
+  @media (max-width: $mobile) {
+    padding: 10px 15px;
+  }
 }
 .popup_show {
-  z-index: 150;
+  z-index: 1150;
   visibility: visible;
   overflow: auto;
   pointer-events: auto;
@@ -51,31 +54,37 @@ body::after {
   visibility: hidden;
   transform: scale(0);
   transition: transform 0.3s ease 0s;
-  //   background-color: #eee;
-  //   padding: 20px;
   width: 100%;
-  max-width: 580px;
-  background: rgb(248, 249, 251);
-  padding: 55px 50px;
+  max-width: 1208px;
+  background: #fbefe1;
+  padding: 60px 100px;
   height: 100%;
-  //   border-radius: 20px;
+  @media (max-width: $tablet) {
+    padding: 30px 30px;
+  }
   .lock & {
     visibility: visible;
   }
   @media (max-width: $mobile) {
     max-width: 100%;
-    padding: 30px 10px;
+    padding: 24px 16px;
   }
 }
 .popup {
   &__close {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 25px;
+    right: 25px;
+    width: 36px;
+    height: 36px;
+    background: #fffbf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     cursor: pointer;
     @media (max-width: $mobile) {
-      top: 20px;
-      right: 20px;
+      display: none;
     }
   }
   .consultation__check {
@@ -85,18 +94,41 @@ body::after {
     align-items: start;
   }
   &__title {
-    font-family: "Made";
-    color: #151a21;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 130%;
-    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 34px;
     text-align: center;
-    margin-bottom: 40px;
+    color: $black;
+    font-family: $mon-alt;
+    margin-bottom: 32px;
     @media (max-width: $mobile) {
+      margin-bottom: 16px;
       font-size: 20px;
-      margin-top: 50px;
-      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 32px;
+    @media (max-width: $mobile) {
+      margin-bottom: 16px;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 117%;
+      color: $black;
+      margin-bottom: 12px;
+      @media (max-width: $mobile) {
+        font-size: 16px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $black;
+      @media (max-width: $mobile) {
+        font-size: 14px;
+      }
     }
   }
   &__text {
@@ -125,7 +157,29 @@ body::after {
   }
 
   &__button {
-    margin-top: 50px;
+    margin: 0 auto;
+    width: 280px;
+    height: 56px;
+    background: #fdad95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 44px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.3s;
+    &:hover {
+      background: #f29a7f;
+    }
+    &:active {
+      border: 4px solid #febeaa;
+      background: #f29a7f;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
   .consultation__textarea {
     @media (max-width: $mobile) {
@@ -134,14 +188,14 @@ body::after {
   }
 }
 
-.popup-main {
-  .popup__content {
-    height: 499px;
-    @media (max-width: $mobile) {
-      height: 487px;
-    }
-  }
-}
+// .popup-main {
+//   .popup__content {
+//     height: 499px;
+//     @media (max-width: $mobile) {
+//       height: 487px;
+//     }
+//   }
+// }
 .popup__par_2 {
   @media (max-width: $mobile) {
     width: 300px;
@@ -265,222 +319,6 @@ body::after {
     margin-bottom: 12px;
     @media (max-width: $mobile) {
       display: none;
-    }
-  }
-}
-
-.popup-service {
-  @media (max-width: $mobile) {
-    padding: 0;
-    border-radius: 0;
-  }
-  .popup__content {
-    @media (max-width: $mobile) {
-      border-radius: 0;
-      padding: 20px 10px;
-    }
-  }
-  .popup__title {
-    @media (max-width: $mobile) {
-      margin-top: 0;
-      max-width: 280px;
-      text-align: left;
-    }
-  }
-  .popup-close {
-    top: 20px;
-    right: 20px;
-    @media (max-width: $mobile) {
-      right: 10px;
-    }
-  }
-  .consultation__input {
-    margin-bottom: 0;
-  }
-  &__counter {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 12px;
-    @media (max-width: $mobile) {
-      margin-bottom: 10px;
-      gap: 10px;
-    }
-  }
-
-  &__label {
-    input {
-      &::placeholder {
-        opacity: 0;
-      }
-      @media (max-width: $mobile) {
-        &::placeholder {
-          opacity: 1;
-        }
-      }
-    }
-  }
-
-  &__increment {
-  }
-
-  &__icon {
-    cursor: pointer;
-    img,
-    svg {
-      border: 1px solid $white;
-      border-radius: 10px;
-      width: 41px;
-      height: 41px;
-    }
-    &:hover {
-      img,
-      svg {
-        border: 1px solid $accent;
-        border-radius: 10px;
-      }
-    }
-  }
-
-  &__decrement {
-    &.disable {
-      svg {
-        fill: #e6e6e6;
-        border: 1px solid #e6e6e6;
-        &:hover {
-          border: 1px solid #e6e6e6;
-        }
-        rect {
-          fill: #e6e6e6;
-        }
-        path {
-          stroke: #aab1b7;
-        }
-      }
-    }
-  }
-
-  ._wallet-chectext {
-    margin-left: 15px;
-    @media (max-width: $mobile) {
-      font-size: 12px;
-    }
-  }
-
-  &__button {
-    margin-top: 0;
-  }
-
-  .consultation__check {
-    margin-bottom: 20px;
-    @media (max-width: $mobile) {
-      margin-bottom: 15px;
-    }
-  }
-  .textik {
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 110%;
-    letter-spacing: 0%;
-    padding-left: 33px;
-    margin-bottom: 40px;
-    span {
-      color: $accent;
-    }
-    @media (max-width: $mobile) {
-      padding-left: 0;
-    }
-  }
-}
-.popup-service-input-text {
-  margin-bottom: 12px !important;
-  @media (max-width: $mobile) {
-    margin-bottom: 10px !important;
-  }
-  &_20 {
-    margin-bottom: 20px !important;
-    @media (max-width: $mobile) {
-      margin-bottom: 10px !important;
-    }
-  }
-}
-
-.popup-certificat {
-  &__body {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    @media (max-width: $mobile) {
-      position: relative;
-    }
-  }
-
-  &__slider {
-    width: 400px;
-    overflow: hidden;
-    @media (max-width: $mobile) {
-      width: calc(100% - 100px);
-    }
-  }
-
-  &__wrapper {
-    display: flex;
-    min-height: 0px;
-  }
-
-  &__slide {
-    flex: 0 0 100%;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.swiper-button-prev {
-  position: absolute;
-  left: -25px;
-  top: 50%;
-  transform: translate(0, -50%);
-  @media (max-width: $mobile) {
-    left: 0;
-  }
-}
-.swiper-button-next {
-  position: absolute;
-  right: -25px;
-  top: 50%;
-  transform: translate(0, -50%);
-  @media (max-width: $mobile) {
-    right: 0;
-  }
-}
-.swiper-button-prev,
-.swiper-button-next {
-  height: 43px;
-  width: 43px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $white;
-  border-radius: 10px;
-  border: 1px solid rgb(29, 30, 32);
-  cursor: pointer;
-  &:hover {
-    border: 1px solid $accent;
-    svg {
-      path {
-        stroke: $accent;
-      }
-    }
-  }
-  &.swiper-button-disabled {
-    background-color: #e6e6e6;
-    border: 1px solid #e6e6e6;
-    cursor: auto;
-    svg {
-      path {
-        stroke: #aab1b7;
-      }
     }
   }
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="js/sliders.js"></script>
+    <script defer src="js/popup.js"></script>
     <script defer src="js/main.js"></script>
   </head>
   <body>
@@ -819,7 +820,7 @@
                   </div>
 
                   <a href="" class="subscription__button">Оплатить</a>
-                  <a href="" class="subscription__link">Подробнее о подписке</a>
+                  <a href="" data-popup="#popup" class="subscription__link">Подробнее о подписке</a>
                 </div>
               </div>
             </div>
@@ -1240,6 +1241,46 @@
           </div>
         </div>
       </footer>
+
+      <div id="popup" aria-hidden="true" class="popup popup-main">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__body popup__body_one active">
+              <h3 class="popup__title">Подарочный сертификат</h3>
+              <div class="popup__item">
+                <h4>Типы информации</h4>
+                <p>
+                  Google собирает пользовательские данные для того, чтобы наши сервисы были более
+                  удобными. Благодаря этому мы не только определяем, на каком языке Вы задали
+                  запрос, но решаем более сложные задТип данных, которые мы собираем, зависит от
+                  того, как Вы используете наши продукты и какие настройки конфиденциальности заданы
+                  в Вашем аккаунте. Если Вы не вошли в аккаунт Google, мы храним информацию, которую
+                  собираем, используя, связанные с вашими браузерами, приложениями Это позволяет нам
+                  запоминать Ваши настройки и другие данные, например предпочтительный язык,
+                  настройки персонализации рекламы и результатов поиска.
+                </p>
+              </div>
+              <div class="popup__item">
+                <h4>Типы информации</h4>
+                <p>
+                  Google собирает пользовательские данные для того, чтобы наши сервисы были более
+                  удобными. Благодаря этому мы не только определяем, на каком языке Вы задали
+                  запрос, но решаем более сложные задТип данных, которые мы собираем, зависит от
+                  того, как Вы используете наши продукты и какие настройки конфиденциальности заданы
+                  в Вашем аккаунте. Если Вы не вошли в аккаунт Google, мы храним информацию, которую
+                  собираем, используя, связанные с вашими браузерами, приложениями Это позволяет нам
+                  запоминать Ваши настройки и другие данные, например предпочтительный язык,
+                  настройки персонализации рекламы и результатов поиска.
+                </p>
+              </div>
+              <button data-close class="popup__button">Закрыть</button>
+            </div>
+            <div data-close class="popup-close popup__close">
+              <img src="img/icons/close.svg" alt="close" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
