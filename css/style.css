@@ -2900,10 +2900,31 @@ body.lock {
   background-color: #ffffff;
   padding: 80px 0px 60px;
 }
+@media (max-width: 767px) {
+  .creativity {
+    padding: 50px 0px 50px;
+  }
+}
+.creativity__container {
+  position: relative;
+}
 .creativity__body {
   display: flex;
   gap: 140px;
   align-items: center;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1238px) {
+  .creativity__body {
+    gap: 24px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .creativity__body {
+    flex-direction: column;
+  }
 }
 .creativity__left {
   flex: 0 1 55%;
@@ -2911,6 +2932,14 @@ body.lock {
 }
 .creativity__title {
   text-align: left;
+}
+@media (max-width: 767px) {
+  .creativity__title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    max-width: 320px;
+  }
 }
 .creativity__description {
   font-weight: 400;
@@ -2926,6 +2955,88 @@ body.lock {
 }
 .creativity__right img {
   width: 100%;
+}
+.creativity__decor {
+  position: absolute;
+}
+.creativity__decor_1 {
+  top: 6%;
+  left: 18%;
+}
+@media (max-width: 992px) {
+  .creativity__decor_1 {
+    top: 0%;
+    left: 44%;
+  }
+}
+@media (max-width: 767px) {
+  .creativity__decor_1 {
+    top: 0%;
+    left: auto;
+    right: 20px;
+  }
+  .creativity__decor_1 img {
+    width: 34px;
+    height: 47px;
+  }
+}
+.creativity__decor_2 {
+  z-index: 3;
+  top: 6%;
+  right: 35%;
+}
+@media (max-width: 992px) {
+  .creativity__decor_2 {
+    display: none;
+  }
+}
+.creativity__decor_3 {
+  bottom: 14%;
+  left: 43%;
+}
+@media (max-width: 992px) {
+  .creativity__decor_3 {
+    display: none;
+  }
+}
+.creativity__decor_4 {
+  bottom: 3%;
+  left: 7%;
+}
+.creativity__decor_4 img {
+  width: 34px;
+  height: 47px;
+}
+@media (max-width: 992px) {
+  .creativity__decor_4 {
+    display: none;
+  }
+}
+.creativity__decor_5 {
+  top: -3%;
+  right: 15%;
+}
+.creativity__decor_5 img {
+  width: 48px;
+  height: 68px;
+}
+@media (max-width: 992px) {
+  .creativity__decor_5 {
+    display: none;
+  }
+}
+.creativity__decor_6 {
+  top: 45%;
+  right: -3%;
+}
+.creativity__decor_6 img {
+  width: 34px;
+  height: 47px;
+}
+@media (max-width: 992px) {
+  .creativity__decor_6 {
+    display: none;
+  }
 }
 
 .footer {
