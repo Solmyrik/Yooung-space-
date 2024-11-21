@@ -129,3 +129,146 @@ if (reviewsliderContainer) {
     });
   });
 }
+
+//слейдер на о нас
+const personalSliderContainer1 = document.querySelector('.personal__block-1');
+
+if (personalSliderContainer1) {
+  const personalSlider1 = new Swiper('.personal__block-1', {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    initialSlide: 1,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
+    loop: true,
+    breakpoints: {
+      320: {
+        spaceBetween: 40,
+        slidesPerView: 'auto',
+      },
+      992: {
+        spaceBetween: 40,
+        slidesPerView: 4,
+      },
+    },
+    on: {
+      slideChange: function () {
+        // Remove the class from all slides before adding new classes
+        this.slides.forEach((slide) => {
+          slide.classList.remove('swiper-slide-next-next');
+          slide.classList.remove('swiper-slide-next-next-next'); // Remove the new class
+        });
+
+        // Calculate the indices for the next and the second next slides
+        const nextIndex = (this.activeIndex + 1) % this.slides.length;
+        const nextNextIndex = (this.activeIndex + 2) % this.slides.length;
+        const nextNextNextIndex = (this.activeIndex + 3) % this.slides.length; // Index for the third next slide
+
+        // Add classes for the next slides
+        this.slides[nextNextIndex].classList.add('swiper-slide-next-next');
+        this.slides[nextNextNextIndex].classList.add('swiper-slide-next-next-next'); // Add the new class
+      },
+    },
+  });
+
+  const items = document.querySelectorAll('.personal__slide_i');
+
+  items.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      console.log(item);
+      if (item.classList.contains('swiper-slide-next-next')) {
+        return;
+      }
+      if (item.classList.contains('swiper-slide-next-next-next')) {
+        return;
+      }
+      if (item.classList.contains('swiper-slide-next')) {
+        return;
+      }
+      if (item.classList.contains('swiper-slide-active')) {
+        return;
+      }
+      if (
+        item.nextElementSibling &&
+        item.nextElementSibling.classList.contains('swiper-slide-active')
+      ) {
+        personalSlider1.slidePrev();
+        return;
+      }
+      personalSlider1.slideNext();
+    });
+  });
+}
+
+const personalSliderContainer2 = document.querySelector('.personal__block-1');
+
+if (personalSliderContainer2) {
+  const personalSlider2 = new Swiper('.personal__block-2', {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    initialSlide: 1,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
+    loop: true,
+    breakpoints: {
+      320: {
+        spaceBetween: 40,
+        slidesPerView: 'auto',
+      },
+      992: {
+        spaceBetween: 40,
+        slidesPerView: 4,
+      },
+    },
+    on: {
+      slideChange: function () {
+        // Remove the class from all slides before adding new classes
+        this.slides.forEach((slide) => {
+          slide.classList.remove('swiper-slide-next-next');
+          slide.classList.remove('swiper-slide-next-next-next'); // Remove the new class
+        });
+
+        // Calculate the indices for the next and the second next slides
+        const nextIndex = (this.activeIndex + 1) % this.slides.length;
+        const nextNextIndex = (this.activeIndex + 2) % this.slides.length;
+        const nextNextNextIndex = (this.activeIndex + 3) % this.slides.length; // Index for the third next slide
+
+        // Add classes for the next slides
+        this.slides[nextNextIndex].classList.add('swiper-slide-next-next');
+        this.slides[nextNextNextIndex].classList.add('swiper-slide-next-next-next'); // Add the new class
+      },
+    },
+  });
+
+  const items = document.querySelectorAll('.personal__slide_a');
+
+  items.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      console.log(item);
+      if (item.classList.contains('swiper-slide-next-next')) {
+        return;
+      }
+      if (item.classList.contains('swiper-slide-next-next-next')) {
+        return;
+      }
+      if (item.classList.contains('swiper-slide-next')) {
+        return;
+      }
+      if (item.classList.contains('swiper-slide-active')) {
+        return;
+      }
+      if (
+        item.nextElementSibling &&
+        item.nextElementSibling.classList.contains('swiper-slide-active')
+      ) {
+        personalSlider2.slidePrev();
+        return;
+      }
+      personalSlider2.slideNext();
+    });
+  });
+}
