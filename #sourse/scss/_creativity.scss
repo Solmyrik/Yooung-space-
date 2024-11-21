@@ -1,0 +1,38 @@
+.creativity {
+  background-color: $white;
+  padding: 80px 0px 60px;
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    gap: 140px;
+    align-items: center;
+  }
+
+  &__left {
+    flex: 0 1 55%;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
+    b {
+      font-weight: 600;
+    }
+  }
+
+  &__right {
+    flex: 0 1 45%;
+    img {
+      width: 100%;
+    }
+  }
+}

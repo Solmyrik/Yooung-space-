@@ -59,7 +59,7 @@
       left: 0;
       z-index: 4;
       // background-color: $black;
-      transform: translate(-100%, 0%);
+      transform: translate(-110%, 0%);
       transition: all 0.5s;
       &.active {
         transform: translate(0, 0%);
@@ -72,7 +72,7 @@
       display: block;
       position: absolute;
       z-index: 100;
-      right: 15px;
+      left: 0px;
       top: 76px;
 
       width: calc(100vw - 30px);
@@ -221,8 +221,17 @@
     font-size: 14px;
     color: #605c5c;
     transition: all 0.3s;
-    &:hover {
-      color: #fdad95;
+    @media (hover: hover) {
+      &:hover {
+        color: #fdad95;
+      }
+    }
+    &.active {
+      @media (min-width: $tablet) {
+        font-weight: 600;
+        font-size: 14px;
+        color: #fdad95;
+      }
     }
     @media (max-width: $tablet) {
       font-weight: 600;
