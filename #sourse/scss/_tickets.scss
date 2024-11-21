@@ -1,0 +1,239 @@
+.tickets {
+  padding: 60px 0px 80px;
+  background: #fbefe1;
+  @media (max-width: $mobile) {
+    padding: 50px 0px;
+  }
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media (max-width: $mobile) {
+      gap: 40px;
+    }
+  }
+
+  &__article {
+    background: #f4e6d6;
+    border-radius: 30px;
+    position: relative;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    h3 {
+      font-weight: 600;
+      font-size: 34px;
+      color: $black;
+      margin-bottom: 24px;
+      @media (max-width: $mobile) {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $black;
+      @media (max-width: $mobile) {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: $mw) {
+      padding: 50px;
+    }
+    @media (max-width: $mobile) {
+      display: block;
+      padding: 0px;
+      background: #fbefe1;
+    }
+  }
+
+  &__left {
+    flex: 0 1 40%;
+    @media (max-width: $mobile) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__right {
+    flex: 0 1 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    @media (max-width: 1250px) {
+      gap: 40px;
+    }
+    @media (max-width: $mw) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+  }
+  .subscription__item {
+    padding: 24px 16px;
+  }
+  .subscription__label {
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 111%;
+      text-align: center;
+      color: #fbefe1;
+    }
+  }
+  .subscription__group {
+  }
+  .subscription__element {
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 143%;
+      color: $black;
+    }
+  }
+  .subscription__circle-left {
+    left: -48px;
+    @media (max-width: $mw) {
+      left: -65px;
+    }
+    @media (max-width: $mobile) {
+      left: -68px;
+    }
+  }
+  .subscription__circle-right {
+    right: -48px;
+    @media (max-width: $mw) {
+      right: -65px;
+    }
+    @media (max-width: $mobile) {
+      right: -68px;
+    }
+  }
+
+  .subscription__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      max-width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    &_1 {
+      left: 21%;
+      top: 18%;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &_5 {
+      left: 21%;
+      top: 18%;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &_2 {
+      bottom: 15%;
+      left: -52px;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &_4 {
+      bottom: 15%;
+      left: 24%;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &_7 {
+      top: 35%;
+      right: 8%;
+      z-index: 2;
+      @media (max-width: $mw) {
+        display: none;
+      }
+    }
+    &_6 {
+      bottom: 15%;
+      left: 24%;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &_3 {
+      left: 11%;
+      top: 18%;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+}
+
+.subscription {
+  &__item {
+  }
+
+  &__name {
+  }
+
+  &__label {
+  }
+
+  &__tablet-elements {
+  }
+
+  &__elements {
+  }
+
+  &__element {
+  }
+
+  &__row {
+  }
+
+  &__group {
+  }
+
+  &__circle-left {
+  }
+
+  &__circle-right {
+  }
+
+  &__bottom {
+  }
+
+  &__prices {
+  }
+
+  &__oldprice {
+  }
+
+  &__price {
+  }
+
+  &__button {
+  }
+
+  &__link {
+  }
+}
+.only-pc-tablet {
+}
+.only-mobile {
+}

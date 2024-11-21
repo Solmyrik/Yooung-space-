@@ -2079,6 +2079,9 @@ body.lock {
   display: flex;
   flex-direction: column;
 }
+.subscription__item.orange {
+  background-color: #fdad95;
+}
 .subscription__item:nth-of-type(2) {
   background-color: #c8d2b9;
 }
@@ -2089,6 +2092,9 @@ body.lock {
   .subscription__item {
     padding: 16px;
   }
+}
+.subscription__item.orange {
+  background-color: #fdad95;
 }
 .subscription__name {
   font-weight: 600;
@@ -3555,6 +3561,219 @@ body.lock {
 }
 @media (max-width: 1238px) {
   .anastacia .personal__decor_5 {
+    display: none;
+  }
+}
+
+.tickets {
+  padding: 60px 0px 80px;
+  background: #fbefe1;
+}
+@media (max-width: 767px) {
+  .tickets {
+    padding: 50px 0px;
+  }
+}
+.tickets__title {
+  margin-bottom: 40px;
+}
+.tickets__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .tickets__body {
+    gap: 40px;
+  }
+}
+.tickets__article {
+  background: #f4e6d6;
+  border-radius: 30px;
+  position: relative;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.tickets__article h3 {
+  font-weight: 600;
+  font-size: 34px;
+  color: #484343;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .tickets__article h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+}
+.tickets__article p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #484343;
+}
+@media (max-width: 767px) {
+  .tickets__article p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1238px) {
+  .tickets__article {
+    padding: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .tickets__article {
+    display: block;
+    padding: 0px;
+    background: #fbefe1;
+  }
+}
+.tickets__left {
+  flex: 0 1 40%;
+}
+@media (max-width: 767px) {
+  .tickets__left {
+    margin-bottom: 24px;
+  }
+}
+.tickets__right {
+  flex: 0 1 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+}
+@media (max-width: 1250px) {
+  .tickets__right {
+    gap: 40px;
+  }
+}
+@media (max-width: 1238px) {
+  .tickets__right {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+.tickets .subscription__item {
+  padding: 24px 16px;
+}
+.tickets .subscription__label p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  text-align: center;
+  color: #fbefe1;
+}
+.tickets .subscription__element p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #484343;
+}
+.tickets .subscription__circle-left {
+  left: -48px;
+}
+@media (max-width: 1238px) {
+  .tickets .subscription__circle-left {
+    left: -65px;
+  }
+}
+@media (max-width: 767px) {
+  .tickets .subscription__circle-left {
+    left: -68px;
+  }
+}
+.tickets .subscription__circle-right {
+  right: -48px;
+}
+@media (max-width: 1238px) {
+  .tickets .subscription__circle-right {
+    right: -65px;
+  }
+}
+@media (max-width: 767px) {
+  .tickets .subscription__circle-right {
+    right: -68px;
+  }
+}
+.tickets .subscription__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+}
+@media (max-width: 767px) {
+  .tickets .subscription__name {
+    font-size: 20px;
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+}
+.tickets__decor {
+  position: absolute;
+}
+.tickets__decor_1 {
+  left: 21%;
+  top: 18%;
+}
+@media (max-width: 992px) {
+  .tickets__decor_1 {
+    display: none;
+  }
+}
+.tickets__decor_5 {
+  left: 21%;
+  top: 18%;
+}
+@media (max-width: 992px) {
+  .tickets__decor_5 {
+    display: none;
+  }
+}
+.tickets__decor_2 {
+  bottom: 15%;
+  left: -52px;
+}
+@media (max-width: 992px) {
+  .tickets__decor_2 {
+    display: none;
+  }
+}
+.tickets__decor_4 {
+  bottom: 15%;
+  left: 24%;
+}
+@media (max-width: 992px) {
+  .tickets__decor_4 {
+    display: none;
+  }
+}
+.tickets__decor_7 {
+  top: 35%;
+  right: 8%;
+  z-index: 2;
+}
+@media (max-width: 1238px) {
+  .tickets__decor_7 {
+    display: none;
+  }
+}
+.tickets__decor_6 {
+  bottom: 15%;
+  left: 24%;
+}
+@media (max-width: 992px) {
+  .tickets__decor_6 {
+    display: none;
+  }
+}
+.tickets__decor_3 {
+  left: 11%;
+  top: 18%;
+}
+@media (max-width: 992px) {
+  .tickets__decor_3 {
     display: none;
   }
 }
