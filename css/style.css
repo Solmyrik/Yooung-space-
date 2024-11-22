@@ -3981,6 +3981,10 @@ body.lock {
   font-size: 14px;
   color: #484343;
   margin: 0 auto;
+  transition: all 0.3s;
+}
+.master-classes__link:hover {
+  background: #fcf4eb;
 }
 .master-classes__link:active {
   background: #f4e6d6;
