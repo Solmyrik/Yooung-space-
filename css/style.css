@@ -2301,6 +2301,10 @@ body.lock {
   font-weight: 600;
   font-size: 14px;
   color: #484343;
+  transition: all 0.3s;
+}
+.subscription__link:hover {
+  color: #fdad95;
 }
 
 .reviews {
