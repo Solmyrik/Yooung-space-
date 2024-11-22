@@ -49,7 +49,7 @@ if (masterSliderContainer2) {
   });
 }
 
-const receiveSliderContainer = document.querySelector('.master__slider-2');
+const receiveSliderContainer = document.querySelector('.receive__slider');
 
 if (receiveSliderContainer) {
   const receiveSSlider = new Swiper('.receive__slider', {
