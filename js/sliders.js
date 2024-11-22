@@ -70,6 +70,127 @@ if (receiveSliderContainer) {
   });
 }
 
+const masterClassesSliderContainer1 = document.querySelector('.master-classes__slider-1');
+
+if (masterClassesSliderContainer1) {
+  const masterClassesSlider1 = new Swiper('.master-classes__slider-1', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+      },
+      992: {
+        spaceBetween: 0,
+      },
+    },
+  });
+}
+const masterClassesSliderContainer2 = document.querySelector('.master-classes__slider-2');
+
+if (masterClassesSliderContainer2) {
+  const masterClassesSlider2 = new Swiper('.master-classes__slider-2', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+      },
+      992: {
+        spaceBetween: 0,
+      },
+    },
+  });
+}
+const masterClassesSliderContainer3 = document.querySelector('.master-classes__slider-3');
+
+if (masterClassesSliderContainer3) {
+  const masterClassesSlider3 = new Swiper('.master-classes__slider-3', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+      },
+      992: {
+        spaceBetween: 0,
+      },
+    },
+  });
+}
+const masterClassesSliderContainer4 = document.querySelector('.master-classes__slider-4');
+
+if (masterClassesSliderContainer4) {
+  const masterClassesSlider4 = new Swiper('.master-classes__slider-4', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+      },
+      992: {
+        spaceBetween: 0,
+      },
+    },
+  });
+}
+const masterClassesSliderContainer5 = document.querySelector('.master-classes__slider-5');
+
+if (masterClassesSliderContainer5) {
+  const masterClassesSlider5 = new Swiper('.master-classes__slider-5', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+      },
+      992: {
+        spaceBetween: 0,
+      },
+    },
+  });
+}
+const masterClassesSliderContainer6 = document.querySelector('.master-classes__slider-6');
+
+if (masterClassesSliderContainer6) {
+  const masterClassesSlider6 = new Swiper('.master-classes__slider-6', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    touchEventsTarget: 'container',
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+      },
+      992: {
+        spaceBetween: 0,
+      },
+    },
+  });
+}
+
 const reviewsliderContainer = document.querySelector('.reviews__slider');
 
 if (reviewsliderContainer) {

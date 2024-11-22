@@ -65,3 +65,43 @@ if (faqItem && faqItem.length) {
 }
 
 // аккордеоны end
+
+// аккордеон мастер
+const buttonsMaster = document.querySelectorAll('.master-classes__button');
+
+function masterItemsHundler(e) {
+  e.preventDefault();
+  console.log(e.currentTarget);
+  const parent = e.currentTarget.closest('.master-classes__article');
+  const hidden = parent.querySelector('.master-classes__hidden');
+
+  hidden.style.maxHeight = hidden.scrollHeight + 'px';
+  hidden.classList.add('active');
+  parent.classList.add('active');
+
+  e.currentTarget.classList.add('active');
+}
+
+buttonsMaster.forEach((item) => {
+  item.addEventListener('click', masterItemsHundler);
+});
+// аккордеон мастер end
+
+//триггеры мастер класс
+const triggersMaster = document.querySelectorAll('.master-classes__trigger');
+const articlesMaster = document.querySelectorAll('.master-classes__articles');
+
+triggersMaster.forEach((trigger, index) => {
+  trigger.addEventListener('click', (e) => {
+    triggersMaster.forEach((item) => {
+      item.classList.remove('active');
+    });
+    articlesMaster.forEach((item) => {
+      item.classList.remove('active');
+    });
+
+    trigger.classList.add('active');
+    articlesMaster[index].classList.add('active');
+  });
+});
+//триггеры мастер класс end
