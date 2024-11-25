@@ -1,6 +1,20 @@
 .team {
   padding: 120px 0;
   background: #bcd1de;
+  &._white {
+    background: #fbefe1;
+    padding: 80px 0;
+    .team__name {
+      font-family: $mon;
+    }
+    @media (max-width: $mobile) {
+      padding: 50px 0px;
+      background-color: $white;
+      .team__item {
+        background: #fbefe1;
+      }
+    }
+  }
   @media (max-width: $tablet) {
     padding: 70px 0px;
   }
@@ -21,7 +35,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    @media (max-width: $mw) {
+    @media (max-width: $md15) {
       gap: 16px;
     }
     @media (max-width: $tablet) {

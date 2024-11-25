@@ -1,0 +1,139 @@
+.review {
+  background: #fbefe1;
+  padding: 40px 0px 80px;
+  @media (max-width: $mobile) {
+    padding: 20px 0px 50px;
+  }
+  &__container {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    &_1 {
+      top: 0;
+      left: 3%;
+    }
+
+    &_2 {
+      top: -15px;
+      right: -10px;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-family: $mon-alt;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 99%;
+    text-align: center;
+    margin-bottom: 60px;
+    @media (max-width: $tablet) {
+      font-size: 50px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width: $mobile) {
+      gap: 16px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media (max-width: $mobile) {
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    background: #f4e6d6;
+    border-radius: 30px;
+    padding: 24px;
+    @media (max-width: $tablet) {
+      display: flex;
+      gap: 16px;
+    }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      padding: 16px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 16px;
+    img {
+      border-radius: 24px;
+      width: 100%;
+    }
+    @media (max-width: $tablet) {
+      flex: 0 1 50%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    @media (max-width: $tablet) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__content {
+    @media (max-width: $tablet) {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__awarar {
+    img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+    }
+  }
+
+  &__texts {
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    color: $black;
+  }
+
+  &__text {
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $black;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: $black;
+  }
+}

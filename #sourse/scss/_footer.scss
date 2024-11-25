@@ -2,8 +2,11 @@
   background-color: $white;
   &__sircle {
     width: 100%;
+    transform: translate(0, 2px);
+    min-width: 100%;
     img {
       width: 100%;
+      min-width: 100%;
     }
   }
 

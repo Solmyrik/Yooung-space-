@@ -21,7 +21,7 @@ a {
   min-height: 100%;
 }
 body {
-  color: $gray;
+  color: $black;
   font-size: 16px;
   font-family: $mon;
   font-weight: 400;
@@ -55,6 +55,7 @@ body {
 @import '_receive';
 @import '_subscription';
 @import '_reviews';
+@import '_review';
 @import '_write';
 @import '_faq';
 @import '_about-intro';
@@ -63,6 +64,7 @@ body {
 @import '_personal';
 @import '_tickets';
 @import '_master-classes';
+@import '_preface';
 @import '_footer';
 
 // ._anim {

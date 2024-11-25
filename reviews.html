@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/sliders.js"></script>
+    <script defer src="js/popup.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__burger-wrapper">
+            <div class="header__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+          <div class="header__wrapper">
+            <div class="header__body">
+              <nav class="header__menu menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="about.html" class="menu__link">О проекте</a></li>
+                  <li class="menu__item">
+                    <a href="master-classes.html" class="menu__link">Мастер-классы</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="subscription.html" class="menu__link">Подписка</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="reviews.html" class="menu__link active">Отзывы</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__center">
+                <div class="header__left">
+                  <h2>Мы в соц.сетях</h2>
+                  <div class="header__socials">
+                    <a href="" target="_blank" class="header__social"
+                      ><img src="img/icons/inst.svg" alt="inst"
+                    /></a>
+                    <a href="" target="_blank" class="header__social"
+                      ><img src="img/icons/vk.svg" alt="vk"
+                    /></a>
+                    <a href="" target="_blank" class="header__social"
+                      ><img src="img/icons/tg.svg" alt="tg"
+                    /></a>
+                  </div>
+                  <p>Instagram признан экстремистским и&nbsp;запрещён на территории РФ</p>
+                </div>
+                <div class="header__right">
+                  <img src="img/header/decor.svg" alt="decor" />
+                </div>
+              </div>
+              <div class="header__bottom">
+                <div class="header__bottom-img">
+                  <img src="img/header/girls.png" alt="girls" />
+                </div>
+                <a href="" target="_blank" class="header__btn">Написать в Telegram</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="" class="header__button">
+            <p>Вход для учеников</p>
+            <img src="img/icons/login.svg" alt="login" />
+          </a>
+        </div>
+      </header>
+      <main class="main">
+        <section class="review">
+          <div class="review__container">
+            <div class="review__decor review__decor_1">
+              <img src="img/icons/star.svg" alt="" />
+            </div>
+            <div class="review__decor review__decor_2">
+              <img src="img/icons/rainbow.svg" alt="" />
+            </div>
+            <h1 class="review__title">Отзывы</h1>
+            <div class="review__body">
+              <div class="review__column">
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/1.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Елена, мама 8-летней Сони</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Этот курс рисования просто великолепен! Моя дочь Соня всегда любила рисовать,
+                      но с этим курсом её интерес к искусству вырос в разы. Учителя не только
+                      объясняют технику, но и вдохновляют детей на творчество. Каждый урок – это
+                      новая возможность для самовыражения. Соня уже создала несколько работ,
+                      которыми мы гордимся всей семьёй. Спасибо за такой замечательный курс. В курсе
+                      есть всё, что нужно для начинающих: простые объяснения, интересные задания и,
+                      главное, поддержка учителей
+                    </p>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/3.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Ольга, мама 10-летнего Максима</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Курс стал для нас настоящим открытием. Максим раньше не проявлял большого
+                      интереса к рисованию, но сейчас он просто не может оторваться от планшета,
+                      изучая новые техники и создавая свои маленькие шедевры. Программа курса
+                      отлично структурирована, а учителя умеют находить подход к каждому ребёнку. Мы
+                      очень довольны!
+                    </p>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/1.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Елена, мама 8-летней Сони</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Этот курс рисования просто великолепен! Моя дочь Соня всегда любила рисовать,
+                      но с этим курсом её интерес к искусству вырос в разы. Учителя не только
+                      объясняют технику, но и вдохновляют детей на творчество. Каждый урок – это
+                      новая возможность для самовыражения. Соня уже создала несколько работ,
+                      которыми мы гордимся всей семьёй. Спасибо за такой замечательный курс. В курсе
+                      есть всё, что нужно для начинающих: простые объяснения, интересные задания и,
+                      главное, поддержка учителей
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="review__column">
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/3.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Ольга, мама 10-летнего Максима</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Курс стал для нас настоящим открытием. Максим раньше не проявлял большого
+                      интереса к рисованию, но сейчас он просто не может оторваться от планшета,
+                      изучая новые техники и создавая свои маленькие шедевры. Программа курса
+                      отлично структурирована, а учителя умеют находить подход к каждому ребёнку. Мы
+                      очень довольны!
+                    </p>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/2.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Елена, мама 8-летней Сони</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Очень рада, что выбрала именно этот курс для своей дочери. Настя всегда любила
+                      рисовать, но ей не хватало знаний и техники. Благодаря курсу на Apidate, её
+                      уровень мастерства заметно вырос.
+                    </p>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/1.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Елена, мама 8-летней Сони</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Этот курс рисования просто великолепен! Моя дочь Соня всегда любила рисовать,
+                      но с этим курсом её интерес к искусству вырос в разы. Учителя не только
+                      объясняют технику, но и вдохновляют детей на творчество. Каждый урок – это
+                      новая возможность для самовыражения. Соня уже создала несколько работ,
+                      которыми мы гордимся всей семьёй. Спасибо за такой замечательный курс. В курсе
+                      есть всё, что нужно для начинающих: простые объяснения, интересные задания и,
+                      главное, поддержка учителей
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="review__column">
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/2.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Елена, мама 8-летней Сони</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Очень рада, что выбрала именно этот курс для своей дочери. Настя всегда любила
+                      рисовать, но ей не хватало знаний и техники. Благодаря курсу на Apidate, её
+                      уровень мастерства заметно вырос. Мне нравится, что в курсе много практических
+                      заданий, которые помогают детям сразу применять полученные знания на практике.
+                      Настя в восторге, и я тоже! В курсе есть всё, что нужно для начинающих:
+                      простые объяснения, интересные задания и, главное, поддержка учителей.
+                    </p>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/1.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Елена, мама 8-летней Сони</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Этот курс рисования просто великолепен! Моя дочь Соня всегда любила рисовать,
+                      но с этим курсом её интерес к искусству вырос в разы. Учителя не только
+                      объясняют технику, но и вдохновляют детей на творчество. Каждый урок – это
+                      новая возможность для самовыражения.
+                    </p>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__img"><img src="img/master/1.png" alt="" /></div>
+                  <div class="review__content">
+                    <div class="review__top">
+                      <div class="review__awarar">
+                        <img src="img/reviews/2.png" alt="awarar" />
+                      </div>
+                      <div class="review__texts">
+                        <h4 class="review__name">Елена, мама 8-летней Сони</h4>
+                        <p class="review__text">Мастер-класс “Жирафик”</p>
+                      </div>
+                    </div>
+                    <p class="review__description">
+                      Очень рада, что выбрала именно этот курс для своей дочери. Настя всегда любила
+                      рисовать, но ей не хватало знаний и техники. Благодаря курсу на Apidate, её
+                      уровень мастерства заметно вырос. Мне нравится, что в курсе много практических
+                      заданий, которые помогают детям сразу применять полученные знания на практике.
+                      Настя в восторге, и я тоже! В курсе есть всё, что нужно для начинающих:
+                      простые объяснения, интересные задания и, главное, поддержка учителей.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="write">
+          <div class="write__container">
+            <div class="write__decor write__decor-1"><img src="img/write/decor.svg" alt="" /></div>
+            <div class="write__decor write__decor-2"><img src="img/write/decor2.svg" alt="" /></div>
+            <div class="write__body">
+              <div class="write__left">
+                <h2 class="write__title _h2">Напишите нам</h2>
+                <p class="write__text">
+                  Если у вас остались какие-то вопросы, возникли проблемы с доступом или оплатой -
+                  напишите в отдел поддержки
+                </p>
+                <a href="" class="write__link">Написать в Telegram</a>
+              </div>
+              <div class="write__right">
+                <img src="img/write/girls.png" alt="girls" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <div class="faq__container">
+            <div class="faq__decor faq__decor_1"><img src="img/faq/decor.svg" alt="" /></div>
+            <div class="faq__decor faq__decor_2"><img src="img/faq/decor2.svg" alt="" /></div>
+            <h2 class="faq__title _h2">Часто задаваемые вопросы</h2>
+            <div class="faq__items">
+              <div class="faq__item">
+                <div class="faq__label">
+                  <p>
+                    Будет ли сложно ребенку проходить обучение без навыков рисования и владения
+                    программой?
+                  </p>
+                  <span
+                    ><svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 8.99902H16M16 8.99902L9 1.99902M16 8.99902L9 15.999"
+                        stroke="#FDAD95"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    На обучении мы даем базовые знания, изучаем основы рисунка, отрабатываем
+                    штриховку и разбираем рисование на простых формах, а также изучаем программу для
+                    рисования Procreate c нуля. Каждый ребенок получит базовые знания, которые
+                    помогут пройти ему обучение!
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__label">
+                  <p>Возможно ли проходить мастер-класс не используя iPad ?</p>
+                  <span
+                    ><svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 8.99902H16M16 8.99902L9 1.99902M16 8.99902L9 15.999"
+                        stroke="#FDAD95"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    Мы рисуем в профессиональной и самой популярной программе для художников,
+                    которая доступна только на iPad. Ждем вас, когда вы приобретете свой первый
+                    цифровой гаджет!
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__label">
+                  <p>Требуется ли помощь родителя в выполнении заданий на мастер-классе?</p>
+                  <span
+                    ><svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 8.99902H16M16 8.99902L9 1.99902M16 8.99902L9 15.999"
+                        stroke="#FDAD95"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    От родителей требуется присутствие в первом и последнем блоке обучения. <br />
+                    Это связано с технической настройкой, покупкой программы, скачивание кистей и
+                    палитр, заполнение данных. <br />
+                    На период рисования, вы можете оставить ребенка наедине с уроками и цифровым
+                    гаджетом.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__label">
+                  <p>
+                    Можно ли совмещать обучение с другими занятиями или это требует полной
+                    занятости?
+                  </p>
+                  <span
+                    ><svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 8.99902H16M16 8.99902L9 1.99902M16 8.99902L9 15.999"
+                        stroke="#FDAD95"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    Мастер-класс разбит на короткие видео-уроки. Такой подход позволяет совмещать
+                    обучение с другими видами деятельности, а также не перегружает ребенка в
+                    процессе. Достаточно уделять по 1 часу несколько раз в неделю.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__label">
+                  <p>Предоставляете ли вы обратную связь на мастер-классе?</p>
+                  <span
+                    ><svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 8.99902H16M16 8.99902L9 1.99902M16 8.99902L9 15.999"
+                        stroke="#FDAD95"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    Обратная связь предоставляется каждому ребенка в формате видео, где он получит
+                    подробную инструкцию как улучшить свою работу и довести ее до идеала. Мы
+                    аккуратно и деликатно помогаем посмотреть на рисунок с другой стороны.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__sircle">
+          <picture>
+            <source srcset="img/footer/circle.svg" media="(min-width: 768px)" />
+            <source srcset="img/footer/circle-mob.svg" media="(max-width: 767px)" />
+            <img src="img/footer/circle.svg" alt="sircle" />
+          </picture>
+        </div>
+        <div class="footer__wrapper">
+          <div class="footer__container">
+            <div class="footer__top">
+              <a href="index.html" class="footer__logo"><img src="img/logo.svg" alt="logo" /></a>
+              <nav class="footer__menu">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="about.html" class="footer__link">О проекте</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="master-classes.html" class="footer__link">Мастер-классы</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="subscription.html" class="footer__link">Подписка</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="reviews.html" class="footer__link">Отзывы</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__left">
+                <div class="footer__socials">
+                  <a href="" target="_blank" class="footer__social"
+                    ><svg
+                      width="28"
+                      height="27"
+                      viewBox="0 0 28 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.666016 12.0745C0.666016 6.48784 0.666015 3.69377 2.40231 1.95895C4.13861 0.224138 6.9312 0.222656 12.5179 0.222656H15.4808C21.0675 0.222656 23.8616 0.222656 25.5964 1.95895C27.3312 3.69525 27.3327 6.48784 27.3327 12.0745V15.0375C27.3327 20.6241 27.3327 23.4182 25.5964 25.153C23.8601 26.8878 21.0675 26.8893 15.4808 26.8893H12.5179C6.9312 26.8893 4.13713 26.8893 2.40231 25.153C0.667497 23.4167 0.666016 20.6241 0.666016 15.0375V12.0745ZM22.8882 6.88932C22.8882 7.47869 22.6541 8.04392 22.2374 8.46067C21.8206 8.87742 21.2554 9.11154 20.666 9.11154C20.0766 9.11154 19.5114 8.87742 19.0947 8.46067C18.6779 8.04392 18.4438 7.47869 18.4438 6.88932C18.4438 6.29995 18.6779 5.73472 19.0947 5.31797C19.5114 4.90123 20.0766 4.6671 20.666 4.6671C21.2554 4.6671 21.8206 4.90123 22.2374 5.31797C22.6541 5.73472 22.8882 6.29995 22.8882 6.88932ZM16.9623 15.0375C16.9623 15.8233 16.6501 16.5769 16.0945 17.1326C15.5388 17.6883 14.7852 18.0004 13.9993 18.0004C13.2135 18.0004 12.4599 17.6883 11.9042 17.1326C11.3486 16.5769 11.0364 15.8233 11.0364 15.0375C11.0364 14.2516 11.3486 13.498 11.9042 12.9423C12.4599 12.3867 13.2135 12.0745 13.9993 12.0745C14.7852 12.0745 15.5388 12.3867 16.0945 12.9423C16.6501 13.498 16.9623 14.2516 16.9623 15.0375ZM19.9253 15.0375C19.9253 16.6091 19.3009 18.1164 18.1896 19.2277C17.0783 20.3391 15.571 20.9634 13.9993 20.9634C12.4277 20.9634 10.9204 20.3391 9.80909 19.2277C8.69776 18.1164 8.07342 16.6091 8.07342 15.0375C8.07342 13.4658 8.69776 11.9585 9.80909 10.8472C10.9204 9.73588 12.4277 9.11154 13.9993 9.11154C15.571 9.11154 17.0783 9.73588 18.1896 10.8472C19.3009 11.9585 19.9253 13.4658 19.9253 15.0375Z"
+                        fill="#484343"
+                      /></svg
+                  ></a>
+                  <a href="" target="_blank" class="footer__social"
+                    ><svg
+                      width="28"
+                      height="27"
+                      viewBox="0 0 28 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.0967 0.222656H9.91668C2.44202 0.222656 0.666016 1.99999 0.666016 9.45866V17.64C0.666016 25.112 2.43002 26.8893 9.90201 26.8893H18.0833C25.5553 26.8893 27.3327 25.1253 27.3327 17.6533V9.47332C27.3327 1.99866 25.5687 0.222656 18.0967 0.222656ZM22.194 19.2493H20.2487C19.5127 19.2493 19.2913 18.6533 17.9713 17.3333C16.8193 16.2227 16.3327 16.084 16.0407 16.084C15.638 16.084 15.5273 16.1947 15.5273 16.7507V18.5C15.5273 18.9733 15.374 19.2507 14.138 19.2507C12.9387 19.1692 11.7758 18.8044 10.7448 18.1862C9.71385 17.5681 8.84422 16.7142 8.20735 15.6947C6.69582 13.8153 5.64472 11.6086 5.13802 9.25066C5.13802 8.95866 5.24868 8.69466 5.80468 8.69466H7.75002C8.25002 8.69466 8.43002 8.91732 8.62468 9.43066C9.56868 12.2093 11.1793 14.6253 11.8327 14.6253C12.0833 14.6253 12.1927 14.5147 12.1927 13.8893V11.028C12.11 9.72266 11.4167 9.61199 11.4167 9.13999C11.4256 9.01549 11.4826 8.89937 11.5757 8.81623C11.6688 8.73309 11.7906 8.68948 11.9153 8.69466H14.9713C15.3887 8.69466 15.5273 8.90266 15.5273 9.40266V13.264C15.5273 13.6813 15.7073 13.82 15.8327 13.82C16.0833 13.82 16.2767 13.6813 16.7353 13.2227C17.7205 12.0212 18.5254 10.6827 19.1247 9.24932C19.1863 9.07739 19.3023 8.93023 19.4551 8.83015C19.6079 8.73006 19.7891 8.68249 19.9713 8.69466H21.9167C22.4993 8.69466 22.6233 8.98666 22.4993 9.40266C21.792 10.9873 20.9168 12.4914 19.8887 13.8893C19.6793 14.2093 19.5953 14.376 19.8887 14.7507C20.082 15.0427 20.7633 15.612 21.222 16.1533C21.8883 16.8184 22.4418 17.5876 22.8607 18.4307C23.0273 18.972 22.7487 19.2493 22.194 19.2493Z"
+                        fill="#484343"
+                      /></svg
+                  ></a>
+                  <a href="" target="_blank" class="footer__social"
+                    ><svg
+                      width="28"
+                      height="27"
+                      viewBox="0 0 28 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.9993 0.222656C6.63935 0.222656 0.666016 6.19599 0.666016 13.556C0.666016 20.916 6.63935 26.8893 13.9993 26.8893C21.3593 26.8893 27.3327 20.916 27.3327 13.556C27.3327 6.19599 21.3593 0.222656 13.9993 0.222656ZM20.186 9.28932C19.986 11.396 19.1193 16.516 18.6793 18.876C18.4927 19.876 18.1193 20.2093 17.7727 20.2493C16.9993 20.316 16.4127 19.7427 15.666 19.2493C14.4927 18.476 13.826 17.996 12.6927 17.2493C11.3727 16.3827 12.226 15.9027 12.986 15.1293C13.186 14.9293 16.5993 11.8227 16.666 11.5427C16.6753 11.5002 16.674 11.4562 16.6624 11.4144C16.6508 11.3726 16.6292 11.3342 16.5993 11.3027C16.5193 11.236 16.4127 11.2627 16.3193 11.276C16.1993 11.3027 14.3327 12.5427 10.6927 14.996C10.1593 15.356 9.67935 15.5427 9.25268 15.5293C8.77268 15.516 7.86601 15.2627 7.18602 15.036C6.34601 14.7693 5.69268 14.6227 5.74602 14.156C5.77268 13.916 6.10602 13.676 6.73268 13.4227C10.626 11.7293 13.2127 10.6093 14.506 10.076C18.2127 8.52932 18.9727 8.26266 19.4793 8.26266C19.586 8.26266 19.8393 8.28932 19.9993 8.42266C20.1327 8.52932 20.1727 8.67599 20.186 8.78266C20.1727 8.86266 20.1993 9.10266 20.186 9.28932Z"
+                        fill="#484343"
+                      /></svg
+                  ></a>
+                </div>
+                <p>Instagram признан экстремистским и&nbsp;запрещён на территории РФ</p>
+              </div>
+            </div>
+            <div class="footer__bottom bottom-footer">
+              <div class="bottom-footer__left">©Все права защищены, young space 2024</div>
+              <div class="bottom-footer__links">
+                <a href="" class="bottom-footer__link">Политика конфиденциальности</a>
+                <a href="" class="bottom-footer__link">Публичная оферта</a>
+                <a href="" class="bottom-footer__link">Пользовательское соглашение</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="popup" aria-hidden="true" class="popup popup-main">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__body popup__body_one active">
+              <h3 class="popup__title">Подарочный сертификат</h3>
+              <div class="popup__item">
+                <h4>Типы информации</h4>
+                <p>
+                  Google собирает пользовательские данные для того, чтобы наши сервисы были более
+                  удобными. Благодаря этому мы не только определяем, на каком языке Вы задали
+                  запрос, но решаем более сложные задТип данных, которые мы собираем, зависит от
+                  того, как Вы используете наши продукты и какие настройки конфиденциальности заданы
+                  в Вашем аккаунте. Если Вы не вошли в аккаунт Google, мы храним информацию, которую
+                  собираем, используя, связанные с вашими браузерами, приложениями Это позволяет нам
+                  запоминать Ваши настройки и другие данные, например предпочтительный язык,
+                  настройки персонализации рекламы и результатов поиска.
+                </p>
+              </div>
+              <div class="popup__item">
+                <h4>Типы информации</h4>
+                <p>
+                  Google собирает пользовательские данные для того, чтобы наши сервисы были более
+                  удобными. Благодаря этому мы не только определяем, на каком языке Вы задали
+                  запрос, но решаем более сложные задТип данных, которые мы собираем, зависит от
+                  того, как Вы используете наши продукты и какие настройки конфиденциальности заданы
+                  в Вашем аккаунте. Если Вы не вошли в аккаунт Google, мы храним информацию, которую
+                  собираем, используя, связанные с вашими браузерами, приложениями Это позволяет нам
+                  запоминать Ваши настройки и другие данные, например предпочтительный язык,
+                  настройки персонализации рекламы и результатов поиска.
+                </p>
+              </div>
+              <button data-close class="popup__button">Закрыть</button>
+            </div>
+            <div data-close class="popup-close popup__close">
+              <img src="img/icons/close.svg" alt="close" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
