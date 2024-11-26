@@ -105,3 +105,37 @@ triggersMaster.forEach((trigger, index) => {
   });
 });
 //триггеры мастер класс end
+
+//cookie
+const cookie = document.querySelector('.cookie');
+const cookieBtn = document.querySelector('.cookie__buttons');
+const valueCookie = localStorage.getItem('cookie');
+
+if (!valueCookie) {
+  cookie.classList.add('active');
+}
+
+if (cookieBtn) {
+  cookieBtn.addEventListener('click', (e) => {
+    console.log(e.target.className.includes('_btn-s'));
+    if (e.target.className.includes('_btn-s')) {
+      hiddenCookie();
+    }
+  });
+}
+
+const hiddenCookie = () => {
+  cookie.classList.remove('active');
+  localStorage.setItem('cookie', true);
+};
+//cookie end
+
+// vanila-footer
+const footer = document.querySelector('footer');
+const sections = document.querySelectorAll('section');
+
+const prevSection = sections[sections.length - 1];
+if (prevSection && prevSection.className.includes('vanila-footer')) {
+  footer.classList.add('vanila-footer');
+}
+// vanila-footer end

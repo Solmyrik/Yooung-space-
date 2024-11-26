@@ -1,5 +1,8 @@
 .footer {
   background-color: $white;
+  &.vanila-footer {
+    background: #fbefe1;
+  }
   &__sircle {
     width: 100%;
     transform: translate(0, 2px);
