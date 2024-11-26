@@ -130,15 +130,33 @@
       @media (max-width: $mobile) {
         padding-top: 126px;
       }
+      opacity: 0.0000000001;
+      transition: all 0.6s;
+      transition-delay: 0.1s;
+      &._active {
+        opacity: 1;
+      }
     }
 
     &_2 {
       img {
         width: 100%;
       }
+      opacity: 0.0000000001;
+      transition: all 0.6s;
+      transition-delay: 0.4s;
+      &._active {
+        opacity: 1;
+      }
     }
 
     &_3 {
+      opacity: 0.0000000001;
+      transition: all 0.6s;
+      transition-delay: 0.8s;
+      &._active {
+        opacity: 1;
+      }
       padding-left: 162px;
       img {
         transform: translate(0, -30px);

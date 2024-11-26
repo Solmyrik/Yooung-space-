@@ -119,6 +119,12 @@
     left: -118px;
     bottom: -267px;
     z-index: 3;
+    opacity: 0.0000000001;
+    transition: all 1s;
+    transition-delay: 0.1;
+    &._active {
+      opacity: 1;
+    }
 
     img {
       width: 66%;
@@ -147,6 +153,12 @@
     text-align: center;
     position: relative;
     width: 651px;
+    opacity: 0.0000000001;
+    transition: all 1s;
+    transition-delay: 1s;
+    &._active {
+      opacity: 1;
+    }
     img {
       width: 651px;
     }
@@ -170,6 +182,12 @@
     right: -144px;
     bottom: -307px;
     z-index: 3;
+    opacity: 0.0000000001;
+    transition: all 1s;
+    transition-delay: 0.1s;
+    &._active {
+      opacity: 1;
+    }
     img {
       width: 66%;
       @media (max-width: $tablet) {
@@ -350,6 +368,14 @@
     top: 46%;
     left: 2%;
     z-index: 5;
+  }
+}
+.label-intro-anim {
+  opacity: 0.0000000001;
+  transition: all 1s;
+  transition-delay: 0.1s;
+  &._active {
+    opacity: 1;
   }
 }
 .label-intro-2 {

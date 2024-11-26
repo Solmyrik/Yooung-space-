@@ -15,6 +15,7 @@
   }
 
   &__body {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -251,6 +252,75 @@
     transition: all 0.3s;
     &:hover {
       color: #fdad95;
+    }
+  }
+}
+
+.subscription__item-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+  width: calc(33% - 26px);
+  height: 100%;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+  @media (max-width: $tablet) {
+    position: static;
+    transform: translate(0, 0);
+    width: auto;
+  }
+}
+
+.subscription__item-2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-8deg);
+  z-index: 2;
+  width: calc(33% - 26px);
+  height: 100%;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+  @media (max-width: $tablet) {
+    position: static;
+    transform: translate(0, 0) !important;
+    width: auto;
+  }
+}
+.subscription__item-3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(5deg);
+  z-index: 1;
+  width: calc(33% - 26px);
+  height: 100%;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+  @media (max-width: $tablet) {
+    position: static;
+    transform: translate(0, 0);
+    width: auto;
+  }
+}
+
+.subscription__body {
+  // height: 592px;
+
+  &._active {
+    .subscription__item-1 {
+      left: 0;
+      transform: translate(0%, 0);
+    }
+    .subscription__item-2 {
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+    .subscription__item-3 {
+      transform: translate(0%, 0) rotate(0deg);
+      left: 69%;
+      // right: 0;
     }
   }
 }
