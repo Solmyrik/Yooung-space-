@@ -62,6 +62,14 @@
           width: 130px;
         }
       }
+      opacity: 0.0000000001;
+      transition: all 0.6s;
+      transition-delay: 0.8s;
+      transform: scale(0.2);
+      &._active {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     &_2 {
@@ -75,6 +83,14 @@
         img {
           width: 150px;
         }
+      }
+      opacity: 0.0000000001;
+      transition: all 0.6s;
+      transition-delay: 0.9s;
+      transform: scale(0.2);
+      &._active {
+        opacity: 1;
+        transform: scale(1);
       }
     }
 
@@ -92,6 +108,14 @@
         img {
           width: 170px;
         }
+      }
+      opacity: 0.0000000001;
+      transition: all 0.6s;
+      transition-delay: 1s;
+      transform: scale(0.2);
+      &._active {
+        opacity: 1;
+        transform: scale(1);
       }
     }
   }

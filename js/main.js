@@ -62,6 +62,8 @@ if (faqItem && faqItem.length) {
       currentLabel.classList.remove('active');
     }
   }
+
+  faqItem[0].click();
 }
 
 // аккордеоны end

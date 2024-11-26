@@ -133,8 +133,10 @@
       opacity: 0.0000000001;
       transition: all 0.6s;
       transition-delay: 0.1s;
+      transform: scale(0.2);
       &._active {
         opacity: 1;
+        transform: scale(1);
       }
     }
 
@@ -145,8 +147,10 @@
       opacity: 0.0000000001;
       transition: all 0.6s;
       transition-delay: 0.4s;
+      transform: scale(0.2);
       &._active {
         opacity: 1;
+        transform: scale(1);
       }
     }
 
@@ -154,8 +158,10 @@
       opacity: 0.0000000001;
       transition: all 0.6s;
       transition-delay: 0.8s;
+      transform: scale(0.2);
       &._active {
         opacity: 1;
+        transform: scale(1);
       }
       padding-left: 162px;
       img {

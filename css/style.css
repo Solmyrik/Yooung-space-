@@ -1040,7 +1040,7 @@ body.lock {
   width: 651px;
   opacity: 0.0000000001;
   transition: all 1s;
-  transition-delay: 1s;
+  transition-delay: 0.4s;
 }
 .intro__tablet._active {
   opacity: 1;
@@ -1928,6 +1928,7 @@ body.lock {
   opacity: 0.0000000001;
   transition: all 0.6s;
   transition-delay: 0.1s;
+  transform: scale(0.2);
 }
 .necessary__img_1 img {
   width: 100%;
@@ -1949,26 +1950,31 @@ body.lock {
 }
 .necessary__img_1._active {
   opacity: 1;
+  transform: scale(1);
 }
 .necessary__img_2 {
   opacity: 0.0000000001;
   transition: all 0.6s;
   transition-delay: 0.4s;
+  transform: scale(0.2);
 }
 .necessary__img_2 img {
   width: 100%;
 }
 .necessary__img_2._active {
   opacity: 1;
+  transform: scale(1);
 }
 .necessary__img_3 {
   opacity: 0.0000000001;
   transition: all 0.6s;
   transition-delay: 0.8s;
+  transform: scale(0.2);
   padding-left: 162px;
 }
 .necessary__img_3._active {
   opacity: 1;
+  transform: scale(1);
 }
 .necessary__img_3 img {
   transform: translate(0, -30px);
@@ -3095,6 +3101,10 @@ body.lock {
 .about-intro__img_1 {
   top: 30px;
   left: -70px;
+  opacity: 0.0000000001;
+  transition: all 0.6s;
+  transition-delay: 0.8s;
+  transform: scale(0.2);
 }
 @media (max-width: 1400px) {
   .about-intro__img_1 {
@@ -3109,9 +3119,17 @@ body.lock {
     width: 130px;
   }
 }
+.about-intro__img_1._active {
+  opacity: 1;
+  transform: scale(1);
+}
 .about-intro__img_2 {
   bottom: 132px;
   left: 30%;
+  opacity: 0.0000000001;
+  transition: all 0.6s;
+  transition-delay: 0.9s;
+  transform: scale(0.2);
 }
 @media (max-width: 992px) {
   .about-intro__img_2 {
@@ -3126,9 +3144,17 @@ body.lock {
     width: 150px;
   }
 }
+.about-intro__img_2._active {
+  opacity: 1;
+  transform: scale(1);
+}
 .about-intro__img_3 {
   top: 190px;
   right: -10px;
+  opacity: 0.0000000001;
+  transition: all 0.6s;
+  transition-delay: 1s;
+  transform: scale(0.2);
 }
 @media (max-width: 1400px) {
   .about-intro__img_3 {
@@ -3147,6 +3173,10 @@ body.lock {
   .about-intro__img_3 img {
     width: 170px;
   }
+}
+.about-intro__img_3._active {
+  opacity: 1;
+  transform: scale(1);
 }
 .about-intro__decor {
   position: absolute;
