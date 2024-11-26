@@ -253,3 +253,27 @@ $vanil: #fbefe1;
     display: block;
   }
 }
+
+.rotating {
+  animation: rotation 10s linear infinite; /* Применение анимации */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); /* Начальная позиция */
+  }
+  to {
+    transform: rotate(360deg); /* Конечная позиция */
+  }
+}
+
+._h2 {
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: all 1s;
+}
+
+._h2._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}

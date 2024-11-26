@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@100..900&display=swap");
 .ibg {
   background-position: center;
@@ -107,6 +108,29 @@
   .only-tablet-mobile {
     display: block;
   }
+}
+
+.rotating {
+  animation: rotation 10s linear infinite; /* Применение анимации */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); /* Начальная позиция */
+  }
+  to {
+    transform: rotate(360deg); /* Конечная позиция */
+  }
+}
+._h2 {
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: all 1s;
+}
+
+._h2._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 body::after {
@@ -1571,7 +1595,7 @@ body.lock {
 @media (max-width: 767px) {
   .what-item-decor {
     top: auto;
-    bottom: 202px;
+    bottom: 246px;
     right: -29px;
   }
 }
