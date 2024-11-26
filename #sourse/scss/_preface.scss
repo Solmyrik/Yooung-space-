@@ -60,6 +60,13 @@
       font-family: $mon-alt;
       margin-bottom: 12px;
     }
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: all 1s;
+    &._active {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
   }
 
   &__desctiption {
