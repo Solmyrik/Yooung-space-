@@ -3132,6 +3132,15 @@ body.lock {
     width: 320px;
   }
 }
+.about-intro__content div {
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: all 1s;
+}
+.about-intro__content div._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
 .about-intro__img {
   position: absolute;
 }
