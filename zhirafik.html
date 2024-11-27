@@ -11,7 +11,7 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper wrapper_master">
       <header class="header">
         <div class="header__container">
           <div class="header__burger-wrapper">
@@ -73,17 +73,17 @@
           </a>
         </div>
       </header>
-      <main class="main">
-        <section class="preface">
+      <main style="overflow: visible" class="main">
+        <section style="overflow: hidden" class="preface">
           <div class="preface__container">
-            <div class="preface__decor preface__decor_1">
-              <img class="rotating" src="img/icons/blue.svg" alt="" />
+            <div class="preface__decor preface__decor_3">
+              <img class="rotating" src="img/icons/green.svg" alt="" />
             </div>
             <div class="preface__decor preface__decor_2">
               <img src="img/icons/decor.svg" alt="" />
             </div>
             <div class="preface__left">
-              <h1 class="preface__title">Открой свои новые таланты вместе с нашей подпиской</h1>
+              <h1 class="preface__title _anim">Мастер-класс “Жирафик”</h1>
               <p class="preface__desctiption">
                 Отправься вместе с нами в увлекательное цифровое сафари, где мы нарисуем милого
                 жирафика в акварельной технике, изучим фишки программы Procreate на iPad
@@ -92,17 +92,196 @@
             </div>
             <div class="preface__right">
               <img src="img/preface/proto.png" alt="proto" />
+              <div class="preface__label">
+                <img src="img/subscription/1.svg" alt="label" />
+                <p>
+                  7-9 <br />
+                  лет
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        <section>
-          <p>
-            <span contenteditable="true"
-              >Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span
-            >
-          </p>
+
+        <section class="program red">
+          <div class="program__container">
+            <div class="program__wrapper">
+              <h2 class="program__title _h2 _anim">Программа обучения</h2>
+              <p class="program__description">
+                Обчение проходит на платформе Геткурс, уроки открываются каждые 3 дня, после
+                завершения выдается сертификат при условии выполнения всех заданих
+              </p>
+              <div class="program__body">
+                <div class="program__decor program__decor_1">
+                  <svg
+                    width="52"
+                    height="56"
+                    viewBox="0 0 52 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.7296 24.944V0L28.6164 24.944L50.2013 15.6932L31.7233 29.2389L52 36.0118L32.8679 34.3599L32.3774 56L25.1824 36.8377L16.6793 54.6785L19.2956 34.6903H0L19.2956 30.3953L0 15.6932L22.7296 24.944Z"
+                      fill="#F29A7F"
+                    />
+                  </svg>
+                </div>
+                <div class="program__decor program__decor_2">
+                  <svg
+                    width="40"
+                    height="57"
+                    viewBox="0 0 40 57"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M40 28.4275C30.1507 31.0381 26.7337 37.1298 24.3216 43.5115C22.7136 47.8626 22.1106 52.5038 20.7035 57C20.3015 55.2595 20.1005 53.3741 19.6985 51.4886C18.4925 45.1069 16.8845 38.7252 11.4573 33.3588C9.04527 30.8931 5.82916 28.7175 1.00503 28.8626C0.804022 28.8626 0.603016 28.7175 0 28.4275C3.21609 28.2824 6.23114 27.8474 8.64321 26.397C14.6734 22.9161 17.4874 17.9848 19.2965 12.6183C20.5025 8.55727 19.8995 4.20611 20.9045 0C21.5075 2.75573 22.3115 5.51143 22.3115 8.4122C22.3115 14.0687 25.1257 19.145 29.5478 23.7862C32.1609 26.2519 35.3769 27.8473 40 28.4275Z"
+                      fill="#F29A7F"
+                    />
+                  </svg>
+                </div>
+                <div class="program__triggers">
+                  <div class="program__trigger active">
+                    <div class="program__num">1</div>
+                    <p>Вводная информация</p>
+                  </div>
+                  <div class="program__trigger">
+                    <div class="program__num">2</div>
+                    <p>Основы рисования</p>
+                  </div>
+                  <div class="program__trigger">
+                    <div class="program__num">3</div>
+                    <p>Рисуем жирафика</p>
+                  </div>
+                  <div class="program__trigger">
+                    <div class="program__num">4</div>
+                    <p>Заключительный блок</p>
+                  </div>
+                </div>
+                <div class="program__articles">
+                  <article class="program__article active">
+                    <div class="program__top">
+                      <b>Вводная информация</b>
+                      <p>примерная длительность <b>30 минут</b></p>
+                    </div>
+                    <div class="program__items">
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Основная информация об iPad и стилусе</p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как скачать программу Procreate </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Знакомство с программой Procreate</p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как скачать кисти, палитру и все материалы </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Бальная система, сертификат </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как ребенку держать стилус </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="program__article">
+                    <div class="program__top">
+                      <b>Вводная информация</b>
+                      <p>примерная длительность <b>30 минут</b></p>
+                    </div>
+                    <div class="program__items">
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Основная информация об iPad и стилусе</p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как скачать программу Procreate </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Знакомство с программой Procreate</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="program__article">
+                    <div class="program__top">
+                      <b>Вводная информация</b>
+                      <p>примерная длительность <b>30 минут</b></p>
+                    </div>
+                    <div class="program__items">
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Основная информация об iPad и стилусе</p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как скачать программу Procreate </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Знакомство с программой Procreate</p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как скачать кисти, палитру и все материалы </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Бальная система, сертификат </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как ребенку держать стилус </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="program__article">
+                    <div class="program__top">
+                      <b>Вводная информация</b>
+                      <p>примерная длительность <b>30 минут</b></p>
+                    </div>
+                    <div class="program__items">
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Основная информация об iPad и стилусе</p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как скачать программу Procreate </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Знакомство с программой Procreate</p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как скачать кисти, палитру и все материалы </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Бальная система, сертификат </p>
+                      </div>
+                      <div class="program__item">
+                        <div class="program__img"><img src="img/program/proto.png" alt="" /></div>
+                        <p class="program__text">Как ребенку держать стилус </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="what">
+
+        <section style="overflow: hidden" class="what">
           <div class="what__container">
             <div class="what-decor what-decor-1"><img src="img/what/decor.svg" alt="decor" /></div>
             <div class="what-decor what-decor-2"><img src="img/what/decor.svg" alt="decor" /></div>
@@ -159,7 +338,7 @@
                 </div>
                 <a href="" target="_blank" class="what__link">Подробнее</a>
               </article>
-              <article style="opacity: 0.000000001" class="what__item what__item-4">
+              <article style="opacity: 0.000000000001" class="what__item what__item-4">
                 <div class="what-item-decor"><img src="img/what/rainbow.svg" alt="rainbow" /></div>
                 <div class="what__top">
                   <div class="what__icon">
@@ -178,7 +357,7 @@
             </div>
           </div>
         </section>
-        <section class="master">
+        <section style="overflow: hidden" class="master">
           <div class="master__container">
             <div class="master__decor-1">
               <img src="img/master/decor1.svg" alt="decor" />
@@ -279,7 +458,7 @@
             </div>
           </div>
         </section>
-        <section class="master master_w">
+        <section style="overflow: hidden" class="master master_w">
           <div class="master__container">
             <div class="master__decor-2">
               <img src="img/master/decor2.svg" alt="decor" />
@@ -383,7 +562,7 @@
             </div>
           </div>
         </section>
-        <section class="team _white">
+        <section style="overflow: hidden" class="team _white">
           <div class="team__container">
             <h2 class="team__title _h2 _anim">Кто ведет обучение</h2>
             <div class="team__body">
@@ -435,7 +614,7 @@
             </div>
           </div>
         </section>
-        <section class="necessary">
+        <section style="overflow: hidden" class="necessary">
           <div class="necessary__container">
             <div class="necessary__decor necessary__decor_1">
               <img src="img/necessary/decor1.svg" alt="decor1" />
@@ -499,7 +678,7 @@
           </div>
         </section>
 
-        <section class="receive">
+        <section style="overflow: hidden" class="receive">
           <div class="receive__container">
             <div class="receive__decor receive__decor_1">
               <img src="img/receive/decor.svg" alt="decor" />
@@ -584,7 +763,7 @@
             </div>
           </div>
         </section>
-        <section class="subscription">
+        <section style="overflow: hidden" class="subscription">
           <div class="subscription__container">
             <h2 class="subscription__title _h2 _anim">
               Забери свой билет в цифровое  приключение в формате подписки
@@ -937,7 +1116,7 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section style="overflow: hidden" class="reviews">
           <div class="reviews__container">
             <h2 class="reviews__title _h2 _anim">Отзывы наших учеников</h2>
             <div class="reviews__body">
@@ -1096,7 +1275,7 @@
             <a href="" class="reviews__link">Смотреть все отзывы</a>
           </div>
         </section>
-        <section class="write">
+        <section style="overflow: hidden" class="write">
           <div class="write__container">
             <div class="write__decor write__decor-1">
               <img class="rotating" src="img/write/decor.svg" alt="" />
@@ -1117,7 +1296,7 @@
             </div>
           </div>
         </section>
-        <section class="faq">
+        <section style="overflow: hidden" class="faq">
           <div class="faq__container">
             <div class="faq__decor faq__decor_1">
               <img class="rotating" src="img/faq/decor.svg" alt="" />

@@ -175,3 +175,57 @@ if (animItems.length > 0) {
   animOnScroll();
 }
 //anime end
+
+//scroll trigger
+const programWrapper = document.querySelector('.program__wrapper');
+
+if (programWrapper) {
+  // Массив цветов для переключения
+  const colors = ['red', 'green', 'blue', 'red'];
+  const sectionHeight = 100; // высота секции в vh (100vh)
+
+  const triggers = document.querySelectorAll('.program__trigger');
+  const articles = document.querySelectorAll('.program__article');
+
+  window.addEventListener('scroll', () => {
+    const main = document.querySelector('.program');
+    const rect = main.getBoundingClientRect(); // Получаем координаты main
+
+    // Вычисляем процент прокрутки внутри main
+    const scrollY = Math.abs(rect.top) + window.scrollY; // Текущая позиция прокрутки
+    const windowHeight = window.innerHeight; // Высота окна просмотра
+    const mainHeight = main.offsetHeight; // Высота main
+
+    // Рассчитываем текущий процент прокрутки внутри main
+    const scrollPercent = (scrollY / (mainHeight - windowHeight)) * 100;
+
+    // Определяем текущий индекс цвета
+    const index = Math.floor((scrollPercent / sectionHeight) * 2);
+    console.log(index);
+    console.log(scrollPercent);
+
+    // Меняем цвет текста в зависимости от текущего индекса
+    if (index < colors.length) {
+      colors.forEach((color) => {
+        main.classList.remove(color);
+      });
+
+      resetTriggers();
+
+      triggers[index].classList.add('active');
+      articles[index].classList.add('active');
+      main.classList.add(colors[index]);
+    }
+
+    function resetTriggers() {
+      triggers.forEach((item) => {
+        item.classList.remove('active');
+      });
+      articles.forEach((item) => {
+        item.classList.remove('active');
+      });
+    }
+  });
+}
+
+//scroll trigger end

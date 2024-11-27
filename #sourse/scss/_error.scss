@@ -139,6 +139,7 @@
 
   &__right {
     flex: 0 1 48%;
+    position: relative;
     img {
       width: 100%;
       @media (max-width: $mobile) {
@@ -148,6 +149,14 @@
     @media (max-width: $mobile) {
       display: flex;
       justify-content: center;
+    }
+  }
+  &__animate {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    img {
+      width: 10vw;
     }
   }
 }

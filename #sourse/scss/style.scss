@@ -15,10 +15,13 @@ a {
   color: inherit;
 }
 .wrapper {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  // overflow: hidden;
+  // &_master {
+  //   overflow: visible;
+  // }
 }
 body {
   color: $black;
@@ -40,6 +43,7 @@ body {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 [class*='__container'] {
   max-width: $mw;
@@ -68,6 +72,7 @@ body {
 @import '_common';
 @import '_error';
 @import '_documents';
+@import '_program';
 @import '_footer';
 
 // ._anim {
