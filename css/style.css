@@ -2492,7 +2492,7 @@ body.lock {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 3;
-  width: calc(33% - 26px);
+  width: calc(33% - 23px);
   height: 100%;
   transition: all 0.5s;
   transition-delay: 0.5s;
@@ -2511,7 +2511,7 @@ body.lock {
   left: 50%;
   transform: translate(-50%, 0) rotate(-8deg);
   z-index: 2;
-  width: calc(33% - 26px);
+  width: calc(33% - 23px);
   height: 100%;
   transition: all 0.5s;
   transition-delay: 0.5s;
@@ -2530,7 +2530,7 @@ body.lock {
   left: 50%;
   transform: translate(-50%, 0) rotate(5deg);
   z-index: 1;
-  width: calc(33% - 26px);
+  width: calc(33% - 23px);
   height: 100%;
   transition: all 0.5s;
   transition-delay: 0.5s;
