@@ -1161,12 +1161,12 @@ body.lock {
 }
 .intro__sircle {
   min-width: 100%;
-  transform: translate(0, 3px);
+  transform: translate(0, 6px);
   position: absolute;
   z-index: 3;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
 }
 .intro__sircle img {
   min-width: 100%;
