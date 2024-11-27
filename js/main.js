@@ -229,3 +229,17 @@ if (programWrapper) {
 }
 
 //scroll trigger end
+
+//
+const reviesItems = document.querySelectorAll('.review__item');
+
+if (reviesItems && reviesItems.length) {
+  const button = document.querySelector('.review__button');
+
+  button.addEventListener('click', (e) => {
+    reviesItems.forEach((item) => {
+      item.classList.remove('hidden');
+    });
+    button.style.display = 'none';
+  });
+}
