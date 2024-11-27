@@ -266,7 +266,7 @@ if (personalSliderContainer1) {
     loop: true,
     breakpoints: {
       320: {
-        spaceBetween: 40,
+        spaceBetween: 16,
         slidesPerView: 'auto',
       },
       992: {
@@ -337,7 +337,7 @@ if (personalSliderContainer2) {
     loop: true,
     breakpoints: {
       320: {
-        spaceBetween: 40,
+        spaceBetween: 16,
         slidesPerView: 'auto',
       },
       992: {
