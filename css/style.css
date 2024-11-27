@@ -5101,6 +5101,11 @@ body.lock {
     padding: 230px 0;
   }
 }
+@media (max-width: 767px) {
+  .program {
+    height: auto;
+  }
+}
 .program.red {
   background: #fdad95;
 }

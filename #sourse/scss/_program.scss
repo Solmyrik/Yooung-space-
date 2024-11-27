@@ -12,6 +12,9 @@
   @media (max-height: 500px) {
     padding: 230px 0;
   }
+  @media (max-width: $mobile) {
+    height: auto;
+  }
   &.red {
     background: #fdad95;
     .program__trigger {
