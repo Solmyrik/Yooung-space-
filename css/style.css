@@ -894,15 +894,6 @@ body.lock {
   overflow: hidden;
   position: relative;
 }
-.intro::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: 0;
-  background-color: #ffffff;
-  z-index: 4;
-}
 @media (max-width: 767px) {
   .intro {
     padding-top: 30px;
