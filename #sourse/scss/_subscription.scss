@@ -324,3 +324,9 @@
     }
   }
 }
+
+.subscription__item-4 {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
