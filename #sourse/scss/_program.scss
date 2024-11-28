@@ -6,6 +6,12 @@
   //   overflow: hidden;
   //   width: 100dvw;
   position: relative;
+  transition: background 0.2s;
+  svg {
+    path {
+      transition: fill 0.2s;
+    }
+  }
   @media (max-height: 650px) {
     padding: 50px 0;
   }
