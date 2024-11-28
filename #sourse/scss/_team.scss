@@ -15,6 +15,20 @@
       }
     }
   }
+  &._white-w {
+    background-color: $white;
+    padding: 80px 0;
+    .team__name {
+      font-family: $mon;
+    }
+    @media (max-width: $mobile) {
+      padding: 50px 0px;
+      background-color: $white;
+      .team__item {
+        background: #fbefe1;
+      }
+    }
+  }
   @media (max-width: $tablet) {
     padding: 70px 0px;
   }

@@ -185,7 +185,7 @@ if (programWrapper) {
   const sectionHeight = 100; // высота секции в vh (100vh)
 
   const triggers = document.querySelectorAll('.program__trigger');
-  const articles = document.querySelectorAll('.program__article');
+  const articles = document.querySelectorAll('.program__article-pc');
 
   window.addEventListener('scroll', () => {
     const main = document.querySelector('.program');
@@ -196,13 +196,17 @@ if (programWrapper) {
     const windowHeight = window.innerHeight; // Высота окна просмотра
     const mainHeight = main.offsetHeight; // Высота main
 
+    console.log(scrollY, 'scrollY');
+    const myScroll = Math.abs(rect.top - window.innerHeight) / mainHeight;
+
     // Рассчитываем текущий процент прокрутки внутри main
     const scrollPercent = (scrollY / (mainHeight - windowHeight)) * 100;
 
     // Определяем текущий индекс цвета
-    const index = Math.floor((scrollPercent / sectionHeight) * 2);
-    console.log(index);
-    console.log(scrollPercent);
+    console.log(myScroll * 4, 'myScroll');
+    const index = Math.floor(myScroll * 4);
+    console.log(index, 'index');
+    console.log(scrollPercent, 'scrollPercent');
 
     // Меняем цвет текста в зависимости от текущего индекса
     if (index < colors.length) {
@@ -243,3 +247,61 @@ if (reviesItems && reviesItems.length) {
     button.style.display = 'none';
   });
 }
+
+// аккордеоны мастер класс
+const masterItems = document.querySelectorAll('.mobile-program__item');
+
+if (masterItems && masterItems.length) {
+  masterItems.forEach((e) => {
+    e.addEventListener('click', feqHandler);
+  });
+
+  function allCloseFaq() {
+    masterItems.forEach((item) => {
+      console.log(item);
+
+      const parrent = item;
+      parrent.classList.remove('active');
+
+      const currentContent = item.querySelector('.mobile-program__content');
+      const currentLabel = item.querySelector('.mobile-program__label');
+
+      item.classList.remove('active');
+      currentContent.style.maxHeight = 0;
+      currentContent.classList.remove('active');
+
+      currentLabel.classList.remove('active');
+    });
+  }
+
+  function feqHandler(e) {
+    e.preventDefault();
+    const isActive = e.currentTarget.classList.contains('active');
+    if (isActive) {
+      allCloseFaq();
+      return;
+    }
+    allCloseFaq();
+    const currentContent = e.currentTarget.querySelector('.mobile-program__content');
+    const currentLabel = e.currentTarget.querySelector('.mobile-program__label');
+
+    parrent = e.currentTarget;
+
+    console.log(e.currentTarget, 'current');
+    console.log(currentLabel, 'currentLabel');
+
+    currentLabel.classList.toggle('active');
+    if (currentLabel.classList.contains('active')) {
+      currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+      currentContent.classList.add('active');
+      parrent.classList.add('active');
+    } else {
+      currentContent.style.maxHeight = 0;
+      currentContent.classList.remove('active');
+      parrent.classList.remove('active');
+      currentLabel.classList.remove('active');
+    }
+  }
+}
+
+// аккордеоны end
