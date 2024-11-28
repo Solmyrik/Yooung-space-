@@ -5143,7 +5143,7 @@ body.lock {
   padding: 10px 0;
   background: #fdad95;
   max-width: 100%;
-  height: 400vh;
+  height: 500vh;
   position: relative;
 }
 @media (max-height: 650px) {
