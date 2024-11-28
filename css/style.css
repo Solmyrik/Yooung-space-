@@ -5366,7 +5366,7 @@ body.lock {
   .program__items {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
   }
 }
 .program__item {
