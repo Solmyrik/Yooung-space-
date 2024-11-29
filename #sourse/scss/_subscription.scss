@@ -102,6 +102,12 @@
     @media (max-width: $mobile) {
       right: -10px;
       top: -30px;
+      p {
+        font-size: 17px;
+      }
+      img {
+        width: 85px;
+      }
     }
   }
 

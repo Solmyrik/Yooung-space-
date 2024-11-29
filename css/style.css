@@ -2341,6 +2341,12 @@ body.lock {
     right: -10px;
     top: -30px;
   }
+  .subscription__label p {
+    font-size: 17px;
+  }
+  .subscription__label img {
+    width: 85px;
+  }
 }
 .subscription__tablet-elements {
   flex: 1 1 auto;
